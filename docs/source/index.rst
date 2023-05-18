@@ -15,5 +15,5 @@ DREPAL-PATHOEXTRACT est un pipeline snakemake intégré qui permet le contrôle 
 
    Installation
    DREPAL-PATHOEXTRACT
-   Analyse bio-informatique
+   Analyse_bio-informatique
    
