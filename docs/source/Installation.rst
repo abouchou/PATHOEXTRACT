@@ -24,6 +24,7 @@ Installer les dépendances nécessaires
 -------------------------------------
 
 Installation de Snakemake et des outils de l'environnement de production
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Avant d'installer Snakemake, nous devons installer Conda. Nous pouvons choisir d'installer Conda à l'emplacement de notre choix. Voici les étapes à suivre :
@@ -45,7 +46,9 @@ mamba create -c bioconda -c conda-forge -n snakemake snakemake-minimal
 #conda activate snakemake 
 #snakemake 
 4.	Pour plus d'informations sur l'installation de Snakemake, vous pouvez consulter le lien suivant : https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
+
 Installation de PM2 et du serveur Apache
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 a - Installation de PM2 :
 Avant d'installer PM2, il faut d'abord installer npm en suivant les étapes suivantes :
@@ -74,7 +77,9 @@ sudo service apache2 start
 6.	Si vous avez un pare-feu en cours d'exécution sur votre serveur, vous devez autoriser les connexions entrantes sur le port 80 (HTTP) avec la commande suivante :
 sudo ufw allow http
 7.	Vous pouvez maintenant accéder à votre serveur Apache en ouvrant un navigateur et en saisissant l'adresse IP de votre serveur(localhost). Par défaut, la page d'accueil d'Apache devrait s'afficher. Vous pouvez également 			placer votre site web dans le répertoire /var/www/html/ et accéder à celui-ci via un navigateur en saisissant l'adresse IP de votre serveur.
+
 Installation des composants du backend (Toolskit)
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 a- Architecture de l'application :
