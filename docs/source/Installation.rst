@@ -3,7 +3,6 @@ Installation
 Télécharger le code source depuis GitHub
 ----------------------------------------
 
-::
 
     1- Cloner l'application via ce "lien" "https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git"
     2- Ouvrez une invite de commande ou un terminal sur votre système.
@@ -12,6 +11,7 @@ Télécharger le code source depuis GitHub
 
     .. code-block:: bash
     :copyable:
+    
        git clone https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git
 
     5- Une fois le clonage terminé, accédez au répertoire DREPAL-PATHOEXTRACT en utilisant la commande suivante :
