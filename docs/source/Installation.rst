@@ -154,20 +154,21 @@ a- Architecture de l'application
 L'application est basée sur une architecture full-stack, composée de deux dossiers distincts : le frontend et le backend. Le dossier frontend contient le build d'Angular, tandis que le dossier toolskit contient le backend codé en Node.js avec Express. Pour assurer le bon fonctionnement des répertoires, il est recommandé de copier le contenu du dossier frontend dans le répertoire www/html du serveur Apache. Pour ce faire, exécutez la commande suivante :
 
 .. code-block:: bash
-DREPAL-PATHOEXTRACT$ sudo cp -r patho /var/www/html/
+
+   DREPAL-PATHOEXTRACT$ sudo cp -r patho /var/www/html/
 
 Ensuite, ouvrez votre navigateur et saisissez l'URL localhost/patho pour accéder à l'application.
 
 Concernant le dossier toolskit, il est important de noter que les dépendances du backend doivent être installées avant de lancer l'application. Pour cela, accédez au répertoire toolskit et exécutez la commande suivante :
 
 .. code-block:: bash
-npm install
+   npm install
 
 Cette commande installe toutes les dépendances nécessaires au bon fonctionnement de l'application. Une fois l'installation terminée, vous pouvez lancer le backend en utilisant la commande suivante dans le répertoire toolskit :
 
 .. code-block:: bash
 
-pm2 start server.js
+   pm2 start server.js
 
 b- Arborescence
 
