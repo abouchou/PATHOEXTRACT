@@ -11,8 +11,7 @@ Télécharger le code source depuis GitHub
 
     .. code-block:: bash
     :copyable:
-    
-       git clone https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git
+    git clone https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git
 
     5- Une fois le clonage terminé, accédez au répertoire DREPAL-PATHOEXTRACT en utilisant la commande suivante :
 
