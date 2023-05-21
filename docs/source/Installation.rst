@@ -3,20 +3,33 @@ Installation
 Télécharger le code source depuis GitHub
 ----------------------------------------
 
-L'application DREPAL-PATHOEXTRACT est disponible sur la plateforme Git via le lien suivant : https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git. Vous pouvez y accéder pour télécharger et installer l'application sur votre système. Une fois installée, vous pouvez suivre les prochaines étapes pour la configuration. 
+L'application DREPAL-PATHOEXTRACT est disponible sur la plateforme Git via le lien suivant :
 
+https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git_.
+
+Vous pouvez y accéder pour télécharger et installer l'application sur votre système. Une fois installée, vous pouvez suivre les prochaines étapes pour la configuration.
 
 Pour cloner DREPAL-PATHOEXTRACT à partir de Git, suivez les étapes ci-dessous :
-1.	Assurez-vous que Git est installé sur votre système. Si ce n'est pas le cas, téléchargez et installez Git à partir du site officiel de Git.
-2.	Ouvrez une invite de commande ou un terminal sur votre système.
-3.	Accédez au répertoire dans lequel vous souhaitez cloner le projet.
-4.	Clonez le projet à partir de Git en utilisant la commande suivante :
 
-git clone https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git
-5.	Une fois le clonage terminé, accédez au répertoire DREPAL-PATHOEXTRACT en utilisant la commande suivante : 
+    Assurez-vous que Git est installé sur votre système. Si ce n'est pas le cas, téléchargez et installez Git à partir du site officiel de Git_.
 
-cd DREPAL-PATHOEXTRACT
-6.	Suivez les instructions dans le fichier README pour la configuration et l'utilisation de DREPAL-PATHOEXTRACT.
+    Ouvrez une invite de commande ou un terminal sur votre système.
+
+    Accédez au répertoire dans lequel vous souhaitez cloner le projet.
+
+    Clonez le projet à partir de Git en utilisant la commande suivante :
+
+    .. code-block:: bash
+
+    git clone https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git
+
+    Une fois le clonage terminé, accédez au répertoire DREPAL-PATHOEXTRACT en utilisant la commande suivante :
+
+    .. code-block:: bash
+
+    cd DREPAL-PATHOEXTRACT
+
+    Suivez les instructions dans le fichier README pour la configuration et l'utilisation de DREPAL-PATHOEXTRACT.
 
 Notez que pour cloner DREPAL-PATHOEXTRACT à partir de Git, vous avez besoin d'un accès Internet et de privilèges administratifs sur votre système.
 
