@@ -184,13 +184,27 @@ Cette commande installe toutes les dépendances nécessaires au bon fonctionneme
 
 .. rubric:: Arborescence
 
-Dans le dossier "patho", vous trouverez plusieurs fichiers et dossiers essentiels à l'application. Le fichier "index.html" est la page d'accueil de l'application. Les fichiers JavaScript sont situés dans le dossier "assets". Le fichier "styles.99f4b67f677e816d.css" contient les styles de l'application, tandis que le fichier "polyfills.d3e1f472fbd76fc8.js" assure la compatibilité avec les navigateurs.
+Dans le dossier "patho", vous trouverez plusieurs fichiers et dossiers essentiels à l'application. 
+- Le fichier "index.html" est la page d'accueil de l'application. Les fichiers JavaScript sont situés dans le dossier "assets". 
 
-Le dossier "toolskit" contient le backend de l'application. Le fichier "app.js" définit les routes de l'application et comment chaque route doit être gérée. Le dossier "controllers" contient les fichiers de contrôleurs qui gèrent la logique métier de l'application. Le dossier "data" contient les fichiers de données de l'application, tels que les informations sur les fichiers chargés dans l'application, les paramètres de configuration et les informations sur les utilisateurs. Le dossier "middleware" contient les fichiers de middleware qui interceptent les requêtes HTTP.
+- Le fichier "styles.99f4b67f677e816d.css" contient les styles de l'application, tandis que le fichier "polyfills.d3e1f472fbd76fc8.js" assure la compatibilité avec les navigateurs.
 
-Le fichier "package.json" est la configuration npm de l'application. Le dossier "routes" contient les routes pour les pages principales de l'application, ainsi que pour la gestion de Conda, les données des utilisateurs, les paramètres de l'application, les références utilisées dans l'application, les téléchargements de fichiers et les utilisateurs de l'application. Le fichier "server.js" lance le serveur et écoute les connexions entrantes sur le port spécifié dans le code du fichier "server.js".
+- Le dossier "toolskit" contient le backend de l'application. Le fichier "app.js" définit les routes de l'application et comment chaque route doit être gérée. 
 
-Pour assurer le bon fonctionnement des répertoires, il est nécessaire de copier le frontend dans le répertoire www/html du serveur Apache. De plus, avant de lancer la commande "pm2 start server.js", assurez-vous d'exécuter la commande "npm install" dans le répertoire "toolskit" pour installer les dépendances nécessaires au backend.
+- Le dossier "controllers" contient les fichiers de contrôleurs qui gèrent la logique métier de l'application. 
+
+- Le dossier "data" contient les fichiers de données de l'application, tels que les informations sur les fichiers chargés dans l'application, les paramètres de configuration et les informations sur les utilisateurs. 
+
+- Le dossier "middleware" contient les fichiers de middleware qui interceptent les requêtes HTTP.
+
+- Le fichier "package.json" est la configuration npm de l'application. 
+
+- Le dossier "routes" contient les routes pour les pages principales de l'application, ainsi que pour la gestion de Conda, les données des utilisateurs, les paramètres de l'application, les références utilisées dans l'application, les téléchargements de fichiers et les utilisateurs de l'application. 
+
+- Le fichier "server.js" lance le serveur et écoute les connexions entrantes sur le port spécifié dans le code du fichier "server.js".
+
+.. note::
+   Pour assurer le bon fonctionnement des répertoires, il est nécessaire de copier le frontend dans le répertoire www/html du serveur Apache. De plus, avant de lancer la commande "pm2 start server.js",        assurez-vous d'exécuter la commande "npm install" dans le répertoire "toolskit" pour installer les dépendances nécessaires au backend.
 
 
 
