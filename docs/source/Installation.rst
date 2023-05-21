@@ -92,23 +92,23 @@ Avant d'installer PM2, il faut d'abord installer npm en suivant les étapes suiv
     .. code-block:: bash
     sudo apt update
 
-    1- Installez Node.js en utilisant la commande suivante :
+    2- Installez Node.js en utilisant la commande suivante :
 
     .. code-block:: bash
     sudo apt install nodejs
 
-    1- Vérifiez la version de Node.js et npm pour vous assurer que l'installation a réussi en utilisant les commandes suivantes :
+    3- Vérifiez la version de Node.js et npm pour vous assurer que l'installation a réussi en utilisant les commandes suivantes :
 
     .. code-block:: bash
     node -v
     npm -v
 
-    1- Si npm n'est pas installé, installez le gestionnaire de paquets npm en utilisant la commande suivante :
+    4- Si npm n'est pas installé, installez le gestionnaire de paquets npm en utilisant la commande suivante :
 
     .. code-block:: bash
     sudo apt install npm
 
-    1- Une fois npm installé, vous pouvez installer PM2 en exécutant la commande suivante :
+    5- Une fois npm installé, vous pouvez installer PM2 en exécutant la commande suivante :
 
     .. code-block:: bash
     sudo npm install pm2 -g
@@ -166,6 +166,7 @@ npm install
 Cette commande installe toutes les dépendances nécessaires au bon fonctionnement de l'application. Une fois l'installation terminée, vous pouvez lancer le backend en utilisant la commande suivante dans le répertoire toolskit :
 
 .. code-block:: bash
+
 pm2 start server.js
 
 b- Arborescence
