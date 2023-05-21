@@ -4,13 +4,13 @@ Télécharger le code source depuis GitHub
 ----------------------------------------
 
 
-    1- Cloner l'application via ce "lien" "https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git"
+    1- Cloner l'application via ce `lien <https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git>`_
     2- Ouvrez une invite de commande ou un terminal sur votre système.
     3- Accédez au répertoire dans lequel vous souhaitez cloner le projet.
     4- Clonez le projet à partir de Git en utilisant la commande suivante :
 
     .. code-block:: bash
-    :copyable:
+    
        git clone https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git
 
     5- Une fois le clonage terminé, accédez au répertoire DREPAL-PATHOEXTRACT en utilisant la commande suivante :
@@ -25,6 +25,7 @@ Télécharger le code source depuis GitHub
         
        Notez que pour cloner DREPAL-PATHOEXTRACT à partir de Git, vous avez besoin d'un accès Internet et de privilèges administratifs sur votre système.
 
+
 Installer les dépendances nécessaires 
 -------------------------------------
 
@@ -33,8 +34,8 @@ Installation de Snakemake et des outils de l'environnement de production
 
 .. note::
    Avant d'installer Snakemake, nous devons installer Conda. Nous pouvons choisir d'installer Conda à l'emplacement de notre choix. Voici les étapes à suivre :
-::
-    .. rubric:: Conda
+   
+.. rubric:: Conda
 
     1- Accédez à votre répertoire de choix et téléchargez le script d'installation de Miniconda :
 
@@ -51,7 +52,7 @@ Installation de Snakemake et des outils de l'environnement de production
 
     3- Pour plus de détails sur l'installation de Conda, vous pouvez consulter ce lien_.
 
-b-Snakemake (Minimal installation)
+.. rubric:: Snakemake (Minimal installation)
 
 Une fois Conda installé, nous pouvons installer Snakemake. Voici les étapes à suivre :
 
@@ -68,8 +69,9 @@ Une fois Conda installé, nous pouvons installer Snakemake. Voici les étapes à
     3- Vérifiez que Snakemake est correctement installé en exécutant les commandes suivantes :
 
     .. code-block:: bash
-    conda activate snakemake
-    snakemake
+       
+       conda activate snakemake
+       snakemake
 
     4- Pour plus d'informations sur l'installation de Snakemake, vous pouvez consulter ce lien_.
 
