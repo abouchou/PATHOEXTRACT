@@ -179,6 +179,14 @@ Le fichier "package.json" est la configuration npm de l'application. Le dossier 
 
 Pour assurer le bon fonctionnement des répertoires, il est nécessaire de copier le frontend dans le répertoire www/html du serveur Apache. De plus, avant de lancer la commande "pm2 start server.js", assurez-vous d'exécuter la commande "npm install" dans le répertoire "toolskit" pour installer les dépendances nécessaires au backend.
 
+A cool bit of code::
+
+   Some cool Code
+
+.. code-block:: rst
+
+   A bit of **rst** which should be *highlighted* properly.
+
 
 
 
