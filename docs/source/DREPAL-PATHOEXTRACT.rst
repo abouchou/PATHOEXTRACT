@@ -4,12 +4,56 @@ DREPAL-PATHOEXTRACT
 Création d'un compte utilisateur
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Bienvenue sur notre application !
 
-Bienvenue sur notre application ! Pour commencer à l'utiliser, vous devez d'abord créer un compte. Cela ne prend que quelques instants.
-Pour créer un compte, cliquez sur le bouton "Create" situé sur la page d'accueil de l'application. Vous serez redirigé vers une page de création de compte où vous devrez saisir votre nom, votre adresse électronique et un mot de passe de votre choix.
-En outre, vous devrez choisir le profil qui vous convient le mieux parmi les options suivantes : Bio-informatique, Biologie et Programmation. Cette information nous permettra de personnaliser votre expérience utilisateur et de vous proposer du contenu adapté à vos besoins.
-Une fois que vous avez rempli tous les champs requis, cliquez sur le bouton "Sign up now". Votre compte sera créé et vous pourrez vous connecter à l'application en utilisant votre adresse électronique et votre mot de passe.
-Si vous oubliez votre mot de passe, vous pouvez cliquer sur le bouton "Forgot Password?" dans l'interface de connexion. Il vous sera demandé d'entrer votre adresse électronique. Si l'adresse électronique est associée à un compte existant, un e-mail contenant votre nouveau mot de passe vous sera envoyé.
+Pour commencer à l'utiliser, vous devez d'abord créer un compte. Cela ne prend que quelques instants.
+
+Création de compte
+------------------
+
+Pour créer un compte, suivez ces étapes simples :
+
+1. Sur la page d'accueil de l'application, cliquez sur le bouton ``Create``.
+
+2. Vous serez redirigé vers une page de création de compte.
+
+3. Remplissez les informations suivantes :
+
+   - Nom
+   
+   - Adresse électronique
+   
+   - Mot de passe de votre choix
+   
+4. Choisissez le profil qui vous convient le mieux parmi les options suivantes :
+
+   - Bio-informatique
+   
+   - Biologie
+   
+   - Programmation
+   
+   Cette information nous permettra de personnaliser votre expérience utilisateur et de vous proposer du contenu adapté à vos besoins.
+   
+5. Une fois que vous avez rempli tous les champs requis, cliquez sur le bouton ``Sign up now``.
+
+6. Votre compte sera créé et vous pourrez vous connecter à l'application en utilisant votre adresse électronique et votre mot de passe.
+
+Mot de passe oublié
+-------------------
+
+Si vous oubliez votre mot de passe, suivez ces étapes :
+
+1. Sur l'interface de connexion, cliquez sur le bouton ``Forgot Password?``
+
+2. Entrez votre adresse électronique associée à votre compte.
+
+3. Si l'adresse électronique est associée à un compte existant, un e-mail contenant votre nouveau mot de passe vous sera envoyé.
+
+Nous espérons que vous apprécierez votre expérience sur notre application ! Si vous avez des questions ou des problèmes, n'hésitez pas à nous contacter.
+
+*Note : Assurez-vous de garder votre mot de passe en sécurité et de ne pas le partager avec d'autres personnes.*
+
 
 
 Connexion à l'application
