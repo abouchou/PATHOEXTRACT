@@ -31,7 +31,10 @@ Pour créer un compte, suivez ces étapes simples :
 
 Mot de passe oublié
 -------------------
-
+.. image:: ../pictures/-21842.png
+   :scale: 15%
+   :alt: Sign up page
+   
 Si vous oubliez votre mot de passe, suivez ces étapes :
 
 1. Sur l'interface de connexion, cliquez sur le bouton ``Forgot Password?``
