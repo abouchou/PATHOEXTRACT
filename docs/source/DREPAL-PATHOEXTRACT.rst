@@ -6,14 +6,13 @@ Création d'un compte utilisateur
 
 Bienvenue sur notre application !
 
-.. image:: ../pictures/-21504.png
-   :alt: Texte alternatif de l'image
-
 Pour commencer à l'utiliser, vous devez d'abord créer un compte. Cela ne prend que quelques instants.
 
 Création de compte
 ------------------
-
+.. image:: ../pictures/-21842.png
+   :alt: Texte alternatif de l'image
+   
 Pour créer un compte, suivez ces étapes simples :
 1. Sur la page d'accueil de l'application, cliquez sur le bouton ``Create``.
 2. Vous serez redirigé vers une page de création de compte.
