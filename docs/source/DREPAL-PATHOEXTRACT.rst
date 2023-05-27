@@ -6,6 +6,11 @@ Création d'un compte utilisateur
 
 Bienvenue sur notre application !
 
+.. image:: ../pictures/-21504.png
+   :width: 300
+   :height: 200
+   :alt: Texte alternatif de l'image
+
 Pour commencer à l'utiliser, vous devez d'abord créer un compte. Cela ne prend que quelques instants.
 
 Création de compte
