@@ -11,7 +11,6 @@ Pour commencer à l'utiliser, vous devez d'abord créer un compte. Cela ne prend
 Création de compte
 ------------------
 .. image:: ../pictures/-21842.png
-   :scale: 15%
    :alt: Sign up page
    
 Pour créer un compte, suivez ces étapes simples :
@@ -32,7 +31,6 @@ Pour créer un compte, suivez ces étapes simples :
 Mot de passe oublié
 -------------------
 .. image:: ../pictures/-21545.png
-   :scale: 15%
    :alt: forgot
    
 Si vous oubliez votre mot de passe, suivez ces étapes :
@@ -50,7 +48,6 @@ Connexion à l'application
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ../pictures/-21824.png
-   :scale: 15%
    :alt: forgot
    
    
@@ -60,7 +57,6 @@ Fonctionnalités générales
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ../pictures/-21533.png
-   :scale: 15%
    :alt: Interface pour l'importation des fichiers.
 
 .. rubric:: Importer les fichiers 
@@ -136,7 +132,6 @@ MultiQC est particulièrement utile pour la visualisation de résultats provenan
 .. rubric:: Quality Control
  
 .. image:: ../pictures/-21612.png
-   :scale: 15%
    :alt: Quality Control
    
 
@@ -148,7 +143,6 @@ La session Quality Control permet de garantir que les échantillons utilisés da
 .. rubric:: Double digital filtering
 
 .. image:: ../pictures/-21642.png
-   :scale: 15%
    :alt: Double digital filtering
     
 La session Double Digital Filtering consiste en effet à extraire le génome du pathogène d'intérêt à partir des échantillons provenant de l'hôte humain. Cela se fait en filtrant les séquences par paire-end pour éliminer les séquences de mauvaise qualité et en utilisant les génomes de référence déjà indexés depuis la session Genome de Références pour aligner les séquences sur le génome ciblé. Le résultat final de cette session est le fichier pathomapped contenant les pathogènes extraits de l'hôte qui ont bien mappé sur le génome du pathogène d'intérêt. Avant l'exécution du traitement de la session Double Digital Filtering, il est nécessaire de sélectionner dans les listes déroulantes l'hôte et le pathogène d'étude. Cela permet de s'assurer que le traitement est adapté aux spécificités de chaque étude et d'obtenir des résultats précis et fiables.
@@ -157,12 +151,10 @@ Pipeline
 .. rubric:: Interface de la session pipeline
 
 .. image:: ../pictures/-21707.png
-   :scale: 15%
    :alt: Interface de la session pipeline
 
 .. rubric:: Generate assembly and/or consensus.
 
 .. image:: ../pictures/-21738.png
-   :scale: 15%
    :alt: Generate assembly and/or consensus.
 
