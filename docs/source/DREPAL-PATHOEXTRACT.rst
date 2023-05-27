@@ -11,7 +11,9 @@ Pour commencer à l'utiliser, vous devez d'abord créer un compte. Cela ne prend
 Création de compte
 ------------------
 .. image:: ../pictures/-21842.png
-   :alt: Texte alternatif de l'image
+   :width: 300
+   :height: 200
+   :alt: Sign up page
    
 Pour créer un compte, suivez ces étapes simples :
 1. Sur la page d'accueil de l'application, cliquez sur le bouton ``Create``.
