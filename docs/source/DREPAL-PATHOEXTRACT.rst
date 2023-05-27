@@ -54,8 +54,9 @@ Connexion à l'application
    :alt: forgot
    
    
-Une fois que vous vous êtes connecté, vous serez accueilli par l'interface utilisateur de l'application. Celle-ci affichera votre nom en session pour vous indiquer que vous êtes connecté avec succès. En fonction de votre profil, vous aurez accès à différentes actions et onglets.
-Maintenant que vous êtes connecté, vous avez accès à l'interface utilisateur de l'application. Dans les lignes qui suivent, nous allons vous présenter les différents onglets et actions que vous pouvez effectuer dans cette partie.
+La fonctionnalité d'importation de fichiers de génomes de référence est disponible dans notre application. Pour importer un fichier de génome de référence, vous pouvez commencer par cliquer sur le bouton ``'Parcourir"`` qui vous permettra de sélectionner le ou les fichiers que vous souhaitez importer. Nous prenons en charge les extensions de fichiers couramment utilisées pour les fichiers de génomes de référence telles que ``.fasta``, ``.fa``, ``.fna``, ``.ffn``, ``.faa``, ``.frn`` et ``.gbk``. Il est important de noter que si vous changez d'avis ou que vous sélectionnez le mauvais fichier, le bouton ``'Close'`` vous permettra d'annuler la sélection des fichiers. De cette manière, vous pouvez vous assurer que vous importez les fichiers de génomes de référence appropriés pour vos analyses.
+
+Une fois que vous avez sélectionné le ou les fichiers, vous pouvez cliquer sur le bouton ``'Upload'`` pour charger les fichiers dans l'application. Vous serez informé de la progression du téléchargement et une fois terminé, vous verrez une confirmation de réussite. À partir de là, les fichiers de génomes de référence peuvent être utilisés dans les traitements ultérieurs de l'application, tels que l'indexation et la suppression des fichiers si nécessaire.
 
 
 Fonctionnalités générales 
