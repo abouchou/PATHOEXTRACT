@@ -11,8 +11,7 @@ Pour commencer à l'utiliser, vous devez d'abord créer un compte. Cela ne prend
 Création de compte
 ------------------
 .. image:: ../pictures/-21842.png
-   :width: 300
-   :height: 200
+   :scale: 50%
    :alt: Sign up page
    
 Pour créer un compte, suivez ces étapes simples :
