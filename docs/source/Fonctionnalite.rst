@@ -78,7 +78,6 @@ En combinant ces deux étapes, le Pipeline garantit des données de haute qualit
 
 Assembler et générer les fichiers consensus 
 -------------------------------------------
-.. image:: ../pictures/-21738.png
 
 La partie "Assembler et générer les fichiers consensus" se déroule en trois étapes essentielles :
 
