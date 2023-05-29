@@ -1,10 +1,13 @@
 Fonctionnalités Générales
 =========================
 
+.. image:: ../pictures/png.png
+   :alt: Interface pour l'importation des fichiers.
+
+
 .. rubric:: Formulaire d'importation et de visualisation 
 
-.. image:: ../pictures/-21533.png
-   :alt: Interface pour l'importation des fichiers.
+
 
 .. rubric:: Importer les génomes de réferences 
    
