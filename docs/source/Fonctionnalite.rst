@@ -1,9 +1,9 @@
 Fonctionnalités Générales
 =========================
 
+
 .. image:: ../pictures/gen.png
    :alt: Fonctionalité generale
-
 
 .. rubric:: Charger les fichiers de références des hôtes / pathogènes
 
