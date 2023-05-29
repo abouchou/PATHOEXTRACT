@@ -1,6 +1,7 @@
 Fonctionnalités Générales
 =========================
 
+.. rubric:: Formulaire d'importation et de visualisation 
 
 .. image:: ../pictures/-21533.png
    :alt: Interface pour l'importation des fichiers.
