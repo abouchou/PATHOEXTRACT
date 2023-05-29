@@ -6,25 +6,22 @@ Création d'un compte utilisateur
 
 Bienvenue sur notre application !
 
-Pour commencer à l'utiliser, vous devez d'abord créer un compte. Cela ne prend que quelques instants.
+Pour utiliser DREPAL-PATHOEXTRACT, vous devez créer un compte. Cela ne prend que quelques instants.
 
-Création de compte
+Formulaire de création de compte
 ------------------
 .. image:: ../pictures/-21842.png
    :alt: Sign up page
    
-Pour créer un compte, suivez ces étapes simples :
+Pour créer un compte, suivez ces étapes ci-dessous :
 1. Sur la page d'accueil de l'application, cliquez sur le bouton ``Create``.
-2. Vous serez redirigé vers une page de création de compte.
+2. Vous serez redirigé vers le formulaire de création de compte.
 3. Remplissez les informations suivantes :
    - Nom
    - Adresse électronique
    - Mot de passe de votre choix
-4. Choisissez le profil qui vous convient le mieux parmi les options suivantes :
-   - Bio-informatique
-   - Biologie
-   - Programmation
-   Cette information nous permettra de personnaliser votre expérience utilisateur et de vous proposer du contenu adapté à vos besoins. 
+NB: Ces parametres nous permettrons controler l'acces a votre repertoire d'analyse. 
+
 5. Une fois que vous avez rempli tous les champs requis, cliquez sur le bouton ``Sign up now``.
 6. Votre compte sera créé et vous pourrez vous connecter à l'application en utilisant votre adresse électronique et votre mot de passe.
 
