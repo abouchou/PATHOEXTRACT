@@ -1,6 +1,5 @@
-Fonctionnalités générales 
+Fonctionnalités Générales
 =========================
-
 
 
 .. image:: ../pictures/-21533.png
