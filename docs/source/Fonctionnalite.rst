@@ -47,46 +47,32 @@ La session "Manage Samples" permet, comme son nom l'indique, de charger des fich
 
 Cette organisation permet une gestion efficace des fichiers et évite les erreurs de traitement.
 
-.. rubric:: Le boutons fastQC
-
-La session "Manage samples" de notre application offre une fonctionnalité pour visualiser les fichiers chargés, quelle que soit leur extension, grâce au bouton "FastQC". Ce bouton permet d'analyser la qualité des fichiers sélectionnés à l'aide de FastQC et de générer des fichiers HTML pour la visualisation des résultats. Cette fonctionnalité est utile pour évaluer la qualité des données avant leur utilisation dans d'autres analyses, telles que l'assemblage de génome ou l'alignement de séquences, permettant ainsi de détecter les problèmes potentiels tels que les erreurs de séquençage ou la contamination.
-
-.. rubric:: Le bouton MultiQC
-
-Le bouton MultiQC dans la session Manage Samples génère des rapports d'analyse de qualité pour un ensemble de fichiers de données. Son fonctionnement est similaire à FastQC. Après avoir sélectionné les fichiers à traiter, MultiQC les analyse et extrait les informations de qualité. Il crée ensuite un rapport global présentant les résultats graphiquement.
-
-MultiQC est particulièrement utile pour visualiser les résultats de plusieurs échantillons ou de différentes plates-formes de séquençage. Il génère des rapports comparatifs pour diverses analyses, telles que RNA-Seq, ChIP-Seq et métagénomique.
-
-
 Contrôler la qualité : Suppression des artéfacts 
 ------------------------------------------------
 .. image:: ../pictures/-21612.png
  
-La session Quality Control nettoie les échantillons avant l'analyse. Elle assure la qualité des données avant les analyses approfondies. Après avoir visualisé les fichiers avec FastQC et MultiQC, cette session gère les paramètres et exécute l'outil TrimGalore via le bouton Control Qualité. TrimGalore est utilisé pour éliminer les mauvais reads, les duplicatas, etc., et garantir des échantillons de qualité. La session assure des résultats fiables et précis.
-
+La session "Quality Control" ajuste la qualité des échantillons patients les preparant ainsi aux differents analyses post séquensage.
 
 Extraire le pathogène d’intérêts 
 --------------------------------
 .. image:: ../pictures/-21642.png
 
-La session Double Digital Filtering extrait le génome du pathogène d'intérêt à partir des échantillons de l'hôte humain. Elle filtre les séquences par paire-end pour éliminer les séquences de mauvaise qualité et les aligne sur le génome ciblé à l'aide des génomes de référence indexés. Le résultat est un fichier pathomapped contenant les pathogènes extraits qui correspondent au génome d'intérêt. Avant l'exécution, il est important de sélectionner l'hôte et le pathogène pour obtenir des résultats précis et fiables.
+La session "Double Digital Filtering" extrait la part de read correspondant a un pathogene d'interet porté par les echantillons patients (hôte humain)
 
 Pipeline contrôle qualité et double soustraction digital
 --------------------------------------------------------
 .. image:: ../pictures/-21707.png
 
-La partie Pipeline de notre application regroupe deux étapes essentielles : le Contrôle Qualité et la Double Soustraction Digitale.
-En combinant ces deux étapes, le Pipeline garantit des données de haute qualité et extrait les pathogènes spécifiques pour une analyse plus poussée.
-
+La partie Pipeline de notre application regroupe deux étapes essentielles de Contrôle Qualité et de Double Soustraction Digitale.
 
 Assembler et générer les fichiers consensus 
 -------------------------------------------
 
-La partie "Assembler et générer les fichiers consensus" se déroule en trois étapes essentielles :
+La partie "Assembler et générer les fichiers consensus" se déroule en trois phases essentielles :
 
-.. rubric:: 1. Eclater le génome du pathogene d'interêt 
+.. rubric:: 1. Eclater le génome de réference du pathogene d'interêt 
 .. image:: ../pictures/-171555.png
-Cette étape consiste à décomposer le génome du pathogène d'intérêt en fragments correspondant à chaque chromosome. Cela permet de préparer les données pour l'assemblage ultérieur.
+Cette étape consiste à décomposer le génome du pathogène d'intérêt en fragments correspondant à chaque chromosome. Cela permet de préparer les données pour la géneration du fichier consensus.
 
 .. rubric:: 2. Assemblage 
 .. image:: ../pictures/-171610.png
