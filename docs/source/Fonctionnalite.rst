@@ -83,7 +83,7 @@ Assembler et générer les fichiers consensus
 La partie "Assembler et générer les fichiers consensus" se déroule en trois étapes essentielles :
 
 .. rubric:: 1. Eclater le génome du pathogene d'interêt 
-.. image:: ../pictures/-171625.png
+.. image:: ../pictures/-171555.png
 Cette étape consiste à décomposer le génome du pathogène d'intérêt en fragments correspondant à chaque chromosome. Cela permet de préparer les données pour l'assemblage ultérieur.
 
 .. rubric:: 2. Assemblage 
@@ -91,7 +91,7 @@ Cette étape consiste à décomposer le génome du pathogène d'intérêt en fra
 Dans cette étape, les fragments de séquences sont alignés et combinés pour reconstruire la séquence complète du génome. Il est important de prendre en compte la ploïdie du pathogène pour obtenir un assemblage précis.
 
 .. rubric:: 3. Génération des consensus 
-.. image:: ../pictures/-171555.png
+.. image:: ../pictures/-171625.png
 Une fois l'assemblage terminé, des fichiers consensus sont générés. Ils représentent la séquence la plus probable pour chaque position du génome, en prenant en compte les variations et les erreurs présentes dans les fragments de séquences.
 
 Ces trois étapes permettent d'obtenir une représentation complète et fiable du génome du pathogène d'intérêt, facilitant ainsi les analyses ultérieures et les découvertes scientifiques.
