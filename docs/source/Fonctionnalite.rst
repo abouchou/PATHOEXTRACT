@@ -1,6 +1,7 @@
 Fonctionnalités Générales
 =========================
 
+Pathoextract fournit un ensemble de fonctionalité telque decrite dans la figure ci-dessous
 
 .. image:: ../pictures/gen.png
    :alt: Fonctionalité generale
@@ -10,18 +11,17 @@ Charger les fichiers de références des hôtes / pathogènes
 
 .. image:: ../pictures/-21504.png
 
-La fonctionnalité d'importation de fichiers de génomes de référence est disponible dans notre application. Pour importer un fichier de génome de référence, vous pouvez commencer par cliquer sur le bouton ``'Select. fichiers`` qui vous permettra de sélectionner le ou les fichiers que vous souhaitez importer. Nous prenons en charge les extensions de fichiers couramment utilisées pour les fichiers de génomes de référence telles que ``.fasta``, ``.fa``, ``.fna``. 
+Pour importer un fichier de génome de référence, vous pouvez commencer par cliquer sur le bouton ``'Select. fichiers`` qui vous permettra de sélectionner le ou les fichiers que vous souhaitez importer. L'application prends en charge les fichiers d'extensions telles que ``.fasta``, ``.fa``, ``.fna``. 
 
 Il est important de noter que si vous changez d'avis ou que vous sélectionnez le mauvais fichier, le bouton ``'Close'`` vous permettra d'annuler la sélection des fichiers. De cette manière, vous pouvez vous assurer que vous importez les fichiers de génomes de référence appropriés pour vos analyses.
 
-Une fois que vous avez sélectionné le ou les fichiers, vous pouvez cliquer sur le bouton ``'Upload'`` pour charger les fichiers dans l'application. Vous serez informé de la progression du téléchargement et une fois terminé, vous verrez une confirmation de réussite.
+Une fois les fichiers selectionnés, vous avez sélectionné le ou les fichiers, vous pouvez cliquer sur le bouton ``'Upload'`` pour charger les fichiers dans l'application. Vous serez informé de la progression du téléchargement et une fois terminé, vous verrez une confirmation de réussite.
 
-À partir de là, les fichiers de génomes de référence peuvent être utilisés dans les traitements ultérieurs de l'application, tels que l'indexation et la suppression des fichiers si nécessaire.
+Un ensemble de boutons tels que l'indexation et la suppression des fichiers  sont mis à disposition pour triater les génomes de réferences.
 
 .. rubric:: Le bouton index
 
-L'indexation des fichiers de génomes de référence est une étape cruciale avant leur utilisation dans les traitements de l'application. Nous avons inclus une fonctionnalité d'indexation dans notre application.
-
+L'indexation des fichiers de génomes de référence est une étape nécessaire pour les opérations de soustractions digitales.
 Pour indexer un fichier de génome de référence, vous devez d'abord le charger dans l'application via l'importation. Ensuite, sélectionnez le fichier et cliquez sur le bouton "Index". Vous serez informé de la progression de l'indexation et recevrez une confirmation de réussite.
 
 Veuillez noter que l'indexation peut prendre du temps en fonction de la taille du fichier et de la puissance de votre ordinateur. Une fois l'indexation terminée, vous pourrez utiliser le fichier dans les traitements ultérieurs de l'application pour une analyse plus rapide et efficace.
