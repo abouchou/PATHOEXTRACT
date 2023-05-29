@@ -40,9 +40,8 @@ Charger et visualiser la qualité des échantillons/isolats cliniques
 
 .. image:: ../pictures/-21533.png
 
-La session "Manage Samples" permet, comme son nom l'indique, de charger des fichiers d'échantillons cliniques ( *Fastq*, *Fq*, en *Fastq.gz* ou *Fq.gz*) et de visualiser leur qualité les options logiciel fastqc et multiqc.
+La session "Manage Samples" permet, comme son nom l'indique, de charger des fichiers d'échantillons cliniques ( *Fastq*, *Fq*, en *Fastq.gz* ou *Fq.gz*) et de visualiser leur qualité les options logiciel fastqc et multiqc. Par defaut les échantillons téléchargés sont destinés a l'option **Files to All Step**, les fichiers chargés seront ainsi disponibles dans toutes les analyses. D'autres options de chargement sont disponible : 
 
-par defaut les échantillons téléchargés sont destinés a l'option **Files to All Step**, les fichiers chargés seront ainsi disponibles dans toutes les analyses. D'autres options de chargement sont disponible : 
  - **Files to Run Double Filtering** ne doit contenir que des fichiers en *Fq.gz* pour pouvoir effectuer la double soustraction.
  - **Files to Generate De Novo** ne doit contenir que des fichiers en *Fastq* pour pouvoir effectuer la génération de novo.
 
