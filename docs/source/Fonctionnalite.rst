@@ -1,11 +1,36 @@
 Fonctionnalités Générales
 =========================
 
-.. image:: ../pictures/png.png
-   :alt: Interface pour l'importation des fichiers.
+.. image:: ../pictures/gen.png
+   :alt: Fonctionalité generale
 
 
-.. rubric:: Formulaire d'importation et de visualisation 
+.. rubric:: Charger les fichiers de références des hôtes / pathogènes
+
+.. image:: ../pictures/-21504.png
+
+.. rubric:: Charger et visualiser la qualité des échantillons/isolats cliniques
+
+.. image:: ../pictures/-21533.png
+
+.. rubric:: Contrôler la qualité : Suppression des artéfacts 
+
+.. image:: ../pictures/-21612.png
+ 
+.. rubric:: Extraire le pathogène d’intérêts 
+
+.. image:: ../pictures/-21642.png
+
+.. rubric:: Pipeline contrôle qualité et double soustraction digital
+
+.. image:: ../pictures/-21707.png
+
+.. rubric:: Assembler et générer les fichiers consensus 
+
+.. image:: ../pictures/-21738.png
+
+
+
 
 
 
