@@ -9,9 +9,27 @@ Fonctionnalités Générales
 
 .. image:: ../pictures/-21504.png
 
+La fonctionnalité d'importation de fichiers de génomes de référence est disponible dans notre application. Pour importer un fichier de génome de référence, vous pouvez commencer par cliquer sur le bouton ``'Parcourir"`` qui vous permettra de sélectionner le ou les fichiers que vous souhaitez importer. Nous prenons en charge les extensions de fichiers couramment utilisées pour les fichiers de génomes de référence telles que ``.fasta``, ``.fa``, ``.fna``, ``.ffn``, ``.faa``, ``.frn`` et ``.gbk``. 
+
+Il est important de noter que si vous changez d'avis ou que vous sélectionnez le mauvais fichier, le bouton ``'Close'`` vous permettra d'annuler la sélection des fichiers. De cette manière, vous pouvez vous assurer que vous importez les fichiers de génomes de référence appropriés pour vos analyses.
+
+Une fois que vous avez sélectionné le ou les fichiers, vous pouvez cliquer sur le bouton ``'Upload'`` pour charger les fichiers dans l'application. Vous serez informé de la progression du téléchargement et une fois terminé, vous verrez une confirmation de réussite.
+
+À partir de là, les fichiers de génomes de référence peuvent être utilisés dans les traitements ultérieurs de l'application, tels que l'indexation et la suppression des fichiers si nécessaire.
+
 .. rubric:: Charger et visualiser la qualité des échantillons/isolats cliniques
 
 .. image:: ../pictures/-21533.png
+
+La session "Manage Samples" permet, comme son nom l'indique, de charger les fichiers dans différents dossiers en fonction du traitement à effectuer.
+
+Dans le répertoire **Files to All Step**, les fichiers chargés pourront être disponibles dans toutes les analyses. Ce répertoire peut contenir tous les types de fichiers générés par le séquençage de l'ADN tels que les fichiers en *Fastq*, *Fq*, en *Fastq.gz* ou *Fq.gz*.
+
+Le dossier **Files to Run Double Filtering** ne doit contenir que des fichiers en *Fq.gz* pour pouvoir effectuer la double soustraction. Quant au dossier **Files to Generate De Novo**, il ne doit contenir que des fichiers en *Fastq* pour pouvoir effectuer la génération de novo.
+
+Cette organisation permet une gestion efficace des fichiers et évite les erreurs de traitement.
+
+
 
 .. rubric:: Contrôler la qualité : Suppression des artéfacts 
 
@@ -33,16 +51,6 @@ Fonctionnalités Générales
 
 
 
-
-.. rubric:: Importer les génomes de réferences 
-   
-La fonctionnalité d'importation de fichiers de génomes de référence est disponible dans notre application. Pour importer un fichier de génome de référence, vous pouvez commencer par cliquer sur le bouton ``'Parcourir"`` qui vous permettra de sélectionner le ou les fichiers que vous souhaitez importer. Nous prenons en charge les extensions de fichiers couramment utilisées pour les fichiers de génomes de référence telles que ``.fasta``, ``.fa``, ``.fna``, ``.ffn``, ``.faa``, ``.frn`` et ``.gbk``. 
-
-Il est important de noter que si vous changez d'avis ou que vous sélectionnez le mauvais fichier, le bouton ``'Close'`` vous permettra d'annuler la sélection des fichiers. De cette manière, vous pouvez vous assurer que vous importez les fichiers de génomes de référence appropriés pour vos analyses.
-
-Une fois que vous avez sélectionné le ou les fichiers, vous pouvez cliquer sur le bouton ``'Upload'`` pour charger les fichiers dans l'application. Vous serez informé de la progression du téléchargement et une fois terminé, vous verrez une confirmation de réussite.
-
-À partir de là, les fichiers de génomes de référence peuvent être utilisés dans les traitements ultérieurs de l'application, tels que l'indexation et la suppression des fichiers si nécessaire.
 
 
 .. rubric:: Le champ filter 
