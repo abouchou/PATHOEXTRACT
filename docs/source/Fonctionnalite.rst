@@ -1,7 +1,7 @@
 Fonctionnalités Générales
 =========================
 
-Pathoextract fournit un ensemble de fonctionalité telque decrite dans la figure ci-dessous
+Pathoextract fournit un ensemble de fonctionnalités telles que décrites dans la figure ci-dessous
 
 .. image:: ../pictures/gen.png
    :alt: Fonctionalité generale
@@ -11,24 +11,28 @@ Charger les fichiers de références des hôtes / pathogènes
 
 .. image:: ../pictures/-21504.png
 
-Pour importer un fichier de génome de référence, vous pouvez commencer par cliquer sur le bouton ``'Select. fichiers`` qui vous permettra de sélectionner le ou les fichiers que vous souhaitez importer. L'application prends en charge les fichiers d'extensions telles que ``.fasta``, ``.fa``, ``.fna``. 
+Pour importer un fichier de génome de référence, vous pouvez commencer par cliquer sur le bouton ``Select files`` qui vous permettra de sélectionner le ou les fichiers que vous souhaitez importer. L'application prend en charge les fichiers avec les extensions telles que ``.fasta``, ``.fa``, ``.fna``.
 
-Il est important de noter que si vous changez d'avis ou que vous sélectionnez le mauvais fichier, le bouton ``'Close'`` vous permettra d'annuler la sélection des fichiers. De cette manière, vous pouvez vous assurer que vous importez les fichiers de génomes de référence appropriés pour vos analyses.
+Il est important de noter que si vous changez d'avis ou que vous sélectionnez le mauvais fichier, le bouton ``Close`` vous permettra d'annuler la sélection des fichiers. De cette manière, vous pouvez vous assurer d'importer les fichiers de génomes de référence appropriés pour vos analyses.
 
-Une fois les fichiers selectionnés, vous avez sélectionné le ou les fichiers, vous pouvez cliquer sur le bouton ``'Upload'`` pour charger les fichiers dans l'application. Vous serez informé de la progression du téléchargement et une fois terminé, vous verrez une confirmation de réussite.
+Une fois les fichiers sélectionnés, vous pouvez cliquer sur le bouton ``Upload`` pour charger les fichiers dans l'application. Vous serez informé de la progression du téléchargement et une fois terminé, vous verrez une confirmation de réussite.
 
-Un ensemble de boutons tels que l'indexation et la suppression des fichiers  sont mis à disposition pour triater les génomes de réferences.
+Un ensemble de boutons est mis à disposition pour effectuer des actions sur les fichiers de génomes de référence, tels que l'indexation et la suppression.
+
 
 .. rubric:: Le bouton index
 
 L'indexation des fichiers de génomes de référence est une étape nécessaire pour les opérations de soustractions digitales.
-Pour indexer un fichier de génome de référence, vous devez d'abord le charger dans l'application via l'importation. Ensuite, sélectionnez le fichier et cliquez sur le bouton "Index". Vous serez informé de la progression de l'indexation et recevrez une confirmation de réussite.
+
+Pour indexer un fichier de génome de référence, vous devez d'abord le charger dans l'application via l'importation. Ensuite, sélectionnez le fichier et cliquez sur le bouton ``Index``. Vous serez informé de la progression de l'indexation et recevrez une confirmation de réussite.
 
 Veuillez noter que l'indexation peut prendre du temps en fonction de la taille du fichier et de la puissance de votre ordinateur. Une fois l'indexation terminée, vous pourrez utiliser le fichier dans les traitements ultérieurs de l'application pour une analyse plus rapide et efficace.
 
+
 .. rubric:: Le bouton check
 
-Le bouton "Check" permet de vérifier si un fichier de génome de référence a déjà été indexé dans l'application. Cette fonctionnalité évite de réindexer un fichier déjà présent, permettant ainsi d'économiser du temps. En cliquant sur le bouton "Check", s'il a déjà été indexé, le bouton devient vert pour indiquer que l'indexation est présente et peut être utilisée dans les traitements ultérieurs. S'il n'a pas été indexé, le bouton devient rouge et l'utilisateur est invité à cliquer sur le bouton "Indexer" pour créer l'index avant de pouvoir l'utiliser dans les traitements ultérieurs.
+Le bouton ``Check`` permet de vérifier si un fichier de génome de référence a déjà été indexé dans l'application. Cette fonctionnalité évite de réindexer un fichier déjà présent, permettant ainsi d'économiser du temps. En cliquant sur le bouton ``Check``, s'il a déjà été indexé, le bouton devient vert pour indiquer que l'indexation est présente et peut être utilisée dans les traitements ultérieurs. S'il n'a pas été indexé, le bouton devient rouge et l'utilisateur est invité à cliquer sur le bouton ``Indexer`` pour créer l'index avant de pouvoir l'utiliser dans les traitements ultérieurs.
+
 
 
 Charger et visualiser la qualité des échantillons/isolats cliniques
