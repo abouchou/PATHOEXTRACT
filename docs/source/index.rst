@@ -19,5 +19,6 @@ Les caractéristiques essentielles de DREPAL-PATHOEXTRACT sont expliquées ci-de
 
    Installation
    DREPAL-PATHOEXTRACT
+   Fonctionnalite_g
    Analyse_bio-informatique
    
