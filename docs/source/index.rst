@@ -16,7 +16,7 @@ Les caractéristiques essentielles de DREPAL-PATHOEXTRACT sont expliquées ci-de
     - Analyse simultanée de plusieurs patients/échantillons en une seule exécution.
     
 .. toctree::
-
+   :maxdepth: 4
    Installation
    DREPAL-PATHOEXTRACT
    Fonctionnalite
