@@ -6,7 +6,7 @@ Fonctionnalités Générales
 .. image:: ../pictures/-21533.png
    :alt: Interface pour l'importation des fichiers.
 
-.. rubric:: Importer les fichiers 
+.. rubric:: Importer les génomes de réferences 
    
 La fonctionnalité d'importation de fichiers de génomes de référence est disponible dans notre application. Pour importer un fichier de génome de référence, vous pouvez commencer par cliquer sur le bouton ``'Parcourir"`` qui vous permettra de sélectionner le ou les fichiers que vous souhaitez importer. Nous prenons en charge les extensions de fichiers couramment utilisées pour les fichiers de génomes de référence telles que ``.fasta``, ``.fa``, ``.fna``, ``.ffn``, ``.faa``, ``.frn`` et ``.gbk``. 
 
