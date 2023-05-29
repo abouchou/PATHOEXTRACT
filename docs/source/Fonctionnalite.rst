@@ -5,7 +5,8 @@ Fonctionnalités Générales
 .. image:: ../pictures/gen.png
    :alt: Fonctionalité generale
 
-.. rubric:: Charger les fichiers de références des hôtes / pathogènes
+Charger les fichiers de références des hôtes / pathogènes
+---------------------------------------------------------
 
 .. image:: ../pictures/-21504.png
 
@@ -16,6 +17,19 @@ Il est important de noter que si vous changez d'avis ou que vous sélectionnez l
 Une fois que vous avez sélectionné le ou les fichiers, vous pouvez cliquer sur le bouton ``'Upload'`` pour charger les fichiers dans l'application. Vous serez informé de la progression du téléchargement et une fois terminé, vous verrez une confirmation de réussite.
 
 À partir de là, les fichiers de génomes de référence peuvent être utilisés dans les traitements ultérieurs de l'application, tels que l'indexation et la suppression des fichiers si nécessaire.
+
+.. rubric:: Le bouton index
+
+L'indexation des fichiers de génomes de référence est une étape cruciale avant leur utilisation dans les traitements de l'application. Nous avons inclus une fonctionnalité d'indexation dans notre application.
+
+Pour indexer un fichier de génome de référence, vous devez d'abord le charger dans l'application via l'importation. Ensuite, sélectionnez le fichier et cliquez sur le bouton "Index". Vous serez informé de la progression de l'indexation et recevrez une confirmation de réussite.
+
+Veuillez noter que l'indexation peut prendre du temps en fonction de la taille du fichier et de la puissance de votre ordinateur. Une fois l'indexation terminée, vous pourrez utiliser le fichier dans les traitements ultérieurs de l'application pour une analyse plus rapide et efficace.
+
+.. rubric:: Le bouton check
+
+Le bouton "Check" permet de vérifier si un fichier de génome de référence a déjà été indexé dans l'application. Cette fonctionnalité évite de réindexer un fichier déjà présent, permettant ainsi d'économiser du temps. En cliquant sur le bouton "Check", s'il a déjà été indexé, le bouton devient vert pour indiquer que l'indexation est présente et peut être utilisée dans les traitements ultérieurs. S'il n'a pas été indexé, le bouton devient rouge et l'utilisateur est invité à cliquer sur le bouton "Indexer" pour créer l'index avant de pouvoir l'utiliser dans les traitements ultérieurs.
+
 
 Charger et visualiser la qualité des échantillons/isolats cliniques
 -------------------------------------------------------------------
@@ -32,40 +46,58 @@ Cette organisation permet une gestion efficace des fichiers et évite les erreur
 
 .. rubric:: Le boutons fastQC
 
-La session "Manage samples" de notre application offre une fonctionnalité intéressante pour visualiser les fichiers que vous avez chargés dans l'application, peu importe leur extension (que ce soit des fichiers paired-end ou single-end), grâce au bouton "FastQC". Ce dernier permet de traiter les fichiers que vous avez sélectionnés et de générer des fichiers HTML pour la visualisation des résultats.
-
-Lorsque vous cliquez sur le bouton "FastQC", l'application va procéder à une analyse de la qualité des fichiers que vous avez sélectionnés, en utilisant l'outil FastQC. Les résultats seront ensuite compilés sous forme de fichiers HTML, qui pourront être visualisés directement dans votre navigateur web.
-
-Cette fonctionnalité est particulièrement utile pour évaluer la qualité de vos données avant de les utiliser dans d'autres analyses, telles que l'assemblage de génome ou l'alignement de séquences. Elle vous permet de détecter rapidement les éventuels problèmes de qualité de vos fichiers, tels que des erreurs de séquençage ou une contamination par des séquences étrangères.
+La session "Manage samples" de notre application offre une fonctionnalité pour visualiser les fichiers chargés, quelle que soit leur extension, grâce au bouton "FastQC". Ce bouton permet d'analyser la qualité des fichiers sélectionnés à l'aide de FastQC et de générer des fichiers HTML pour la visualisation des résultats. Cette fonctionnalité est utile pour évaluer la qualité des données avant leur utilisation dans d'autres analyses, telles que l'assemblage de génome ou l'alignement de séquences, permettant ainsi de détecter les problèmes potentiels tels que les erreurs de séquençage ou la contamination.
 
 .. rubric:: Le bouton MultiQC
 
-Le bouton MultiQC disponible dans la session Manage Samples nous permet de générer des rapports d'analyse de qualité pour un ensemble de fichiers de données. Le fonctionnement de ce bouton est similaire à celui de FastQC. En effet, après avoir sélectionné les fichiers à traiter, le bouton MultiQC les analysera pour en extraire les informations de qualité. Il créera ensuite un rapport global qui présentera les résultats sous forme graphique pour une meilleure compréhension.
+Le bouton MultiQC dans la session Manage Samples génère des rapports d'analyse de qualité pour un ensemble de fichiers de données. Son fonctionnement est similaire à FastQC. Après avoir sélectionné les fichiers à traiter, MultiQC les analyse et extrait les informations de qualité. Il crée ensuite un rapport global présentant les résultats graphiquement.
 
-MultiQC est particulièrement utile pour la visualisation de résultats provenant de multiples échantillons ou de différentes plates-formes de séquençage. Il permet ainsi de générer des rapports comparatifs pour différentes analyses. Ce bouton peut être utilisé pour des analyses de RNA-Seq, de ChIP-Seq, de métagénomique, entre autres.
+MultiQC est particulièrement utile pour visualiser les résultats de plusieurs échantillons ou de différentes plates-formes de séquençage. Il génère des rapports comparatifs pour diverses analyses, telles que RNA-Seq, ChIP-Seq et métagénomique.
 
 
 Contrôler la qualité : Suppression des artéfacts 
 ------------------------------------------------
 .. image:: ../pictures/-21612.png
  
+La session Quality Control nettoie les échantillons avant l'analyse. Elle assure la qualité des données avant les analyses approfondies. Après avoir visualisé les fichiers avec FastQC et MultiQC, cette session gère les paramètres et exécute l'outil TrimGalore via le bouton Control Qualité. TrimGalore est utilisé pour éliminer les mauvais reads, les duplicatas, etc., et garantir des échantillons de qualité. La session assure des résultats fiables et précis.
+
+
 Extraire le pathogène d’intérêts 
 --------------------------------
 .. image:: ../pictures/-21642.png
+
+La session Double Digital Filtering extrait le génome du pathogène d'intérêt à partir des échantillons de l'hôte humain. Elle filtre les séquences par paire-end pour éliminer les séquences de mauvaise qualité et les aligne sur le génome ciblé à l'aide des génomes de référence indexés. Le résultat est un fichier pathomapped contenant les pathogènes extraits qui correspondent au génome d'intérêt. Avant l'exécution, il est important de sélectionner l'hôte et le pathogène pour obtenir des résultats précis et fiables.
 
 Pipeline contrôle qualité et double soustraction digital
 --------------------------------------------------------
 .. image:: ../pictures/-21707.png
 
-.. rubric:: Assembler et générer les fichiers consensus 
--------------------------------------------------------
+La partie Pipeline de notre application regroupe deux étapes essentielles : le Contrôle Qualité et la Double Soustraction Digitale.
+En combinant ces deux étapes, le Pipeline garantit des données de haute qualité et extrait les pathogènes spécifiques pour une analyse plus poussée.
+
+
+Assembler et générer les fichiers consensus 
+-------------------------------------------
 .. image:: ../pictures/-21738.png
 
+La partie "Assembler et générer les fichiers consensus" se déroule en trois étapes essentielles :
 
+.. rubric:: 1. Eclater le génome du pathogene d'interêt 
+.. image:: ../pictures/-171625.png
+Cette étape consiste à décomposer le génome du pathogène d'intérêt en fragments correspondant à chaque chromosome. Cela permet de préparer les données pour l'assemblage ultérieur.
 
+.. rubric:: 2. Assemblage 
+.. image:: ../pictures/-171610.png
+Dans cette étape, les fragments de séquences sont alignés et combinés pour reconstruire la séquence complète du génome. Il est important de prendre en compte la ploïdie du pathogène pour obtenir un assemblage précis.
 
+.. rubric:: 3. Génération des consensus 
+.. image:: ../pictures/-171555.png
+Une fois l'assemblage terminé, des fichiers consensus sont générés. Ils représentent la séquence la plus probable pour chaque position du génome, en prenant en compte les variations et les erreurs présentes dans les fragments de séquences.
 
+Ces trois étapes permettent d'obtenir une représentation complète et fiable du génome du pathogène d'intérêt, facilitant ainsi les analyses ultérieures et les découvertes scientifiques.
 
+Les autres fonctionnalités 
+--------------------------
 
 .. rubric:: Le champ filter 
  
@@ -74,13 +106,11 @@ Par exemple, si vous recherchez un fichier spécifique, vous pouvez simplement s
 De même, si vous avez besoin de trier les fichiers en fonction de leur taille ou de leur date de modification, vous pouvez simplement utiliser le champ ``"Filter"`` en spécifiant ces critères dans la recherche.
 En somme, le champ ``"Filter"`` de notre application est un outil de recherche flexible et puissant qui permet aux utilisateurs de trouver rapidement et facilement les fichiers de génomes de référence dont ils ont besoin pour leur travail.
 
-
 .. rubric:: Le bouton Delete 
 
 Le bouton ``"Delete"`` est une fonctionnalité importante de notre application qui permet de supprimer les fichiers sélectionnés dans la liste des répertoires. Pour utiliser cette fonctionnalité, vous pouvez d'abord sélectionner les fichiers que vous souhaitez supprimer en cochant les cases à côté des noms de fichiers dans la liste.
 Une fois que vous avez sélectionné les fichiers à supprimer, vous pouvez cliquer sur le bouton ``"Delete"`` pour lancer le processus de suppression. Cette étape est importante car la suppression des fichiers est définitive et il ne sera pas possible de récupérer les fichiers supprimés.
 Les fichiers seront supprimés de la liste des répertoires et de l'application. Cette fonctionnalité peut être très utile pour supprimer les fichiers obsolètes ou inutiles, libérant ainsi de l'espace disque pour de nouveaux fichiers à importer.
-
 
 .. rubric:: Le bouton Status	
 
@@ -90,14 +120,9 @@ La couleur jaune indique que le processus s'est bien déroulé mais pas à 100%.
 Enfin, la couleur verte indique que le processus s'est bien déroulé à 100% et que toutes les opérations ont été effectuées avec succès. Il n'y a pas besoin de vérifier les journaux associés dans ce cas.
 Le bouton ``"Status"`` est un moyen facile de vérifier l'état des processus et de savoir si tout s'est bien passé. Il est important de noter que les journaux associés fournissent des informations détaillées pour aider à résoudre les erreurs et les problèmes éventuels.
 
-
 .. rubric:: Le bouton Download Log
 
 Ce bouton est une fonctionnalité très utile de notre application. En effet, il permet de visualiser toutes les opérations qui ont été effectuées lors des différents processus de l'application. En cliquant sur ce bouton, un fichier texte sera téléchargé directement depuis le navigateur.
 Le fichier log contient toutes les informations relatives aux opérations effectuées dans l'application, y compris les erreurs et les avertissements. Il peut donc être très utile pour diagnostiquer les problèmes et les erreurs qui peuvent survenir lors des processus de traitement de données.
 Il est important de noter que les fichiers logs sont généralement volumineux. Il est donc recommandé de prendre des mesures de sécurité appropriées pour stocker et gérer ces fichiers.
 
-
-.. rubric::  Génome de références 
-La partie "Génome de référence" de notre application est une section importante pour le traitement des données génomiques. Elle permet de stocker les génomes de référence et de les charger facilement pour une utilisation ultérieure dans les différentes analyses génomiques. Ces génomes de référence peuvent être indexés pour une recherche rapide et efficace des séquences spécifiques.
-Notre application offre également la possibilité de supprimer des génomes de référence en cas de besoin, que ce soit pour libérer de l'espace de stockage ou pour mettre à jour les données. La gestion efficace de ces génomes de référence est essentielle pour assurer la qualité et la précision des analyses génomiques.
