@@ -162,7 +162,7 @@ Installation des composants du backend (Toolskit)
 
 .. rubric:: Architecture de l'application
 
-L'application est basée sur une architecture full-stack, composée de deux dossiers distincts : le frontend et le backend. Le dossier frontend contient le build d'Angular, tandis que le dossier toolskit contient le backend codé en Node.js avec Express. Pour assurer le bon fonctionnement des répertoires, il est recommandé de copier le contenu du dossier frontend dans le répertoire www/html du serveur Apache. Pour ce faire, exécutez la commande suivante :
+L'application est basée sur une architecture full-stack, composée de deux dossiers distincts : le frontend et le backend. Le dossier frontend contient le build d'Angular, tandis que le dossier toolskit contient le backend codé en Node.js Express. Pour assurer le bon fonctionnement des répertoires, il est recommandé de copier le contenu du dossier frontend dans le répertoire www/html du serveur Apache. Pour ce faire, exécutez la commande suivante :
 
 .. code-block:: bash
 
