@@ -17,7 +17,8 @@ Une fois que vous avez sélectionné le ou les fichiers, vous pouvez cliquer sur
 
 À partir de là, les fichiers de génomes de référence peuvent être utilisés dans les traitements ultérieurs de l'application, tels que l'indexation et la suppression des fichiers si nécessaire.
 
-.. rubric:: Charger et visualiser la qualité des échantillons/isolats cliniques
+Charger et visualiser la qualité des échantillons/isolats cliniques
+-------------------------------------------------------------------
 
 .. image:: ../pictures/-21533.png
 
@@ -29,22 +30,35 @@ Le dossier **Files to Run Double Filtering** ne doit contenir que des fichiers e
 
 Cette organisation permet une gestion efficace des fichiers et évite les erreurs de traitement.
 
+.. rubric:: Le boutons fastQC
+
+La session "Manage samples" de notre application offre une fonctionnalité intéressante pour visualiser les fichiers que vous avez chargés dans l'application, peu importe leur extension (que ce soit des fichiers paired-end ou single-end), grâce au bouton "FastQC". Ce dernier permet de traiter les fichiers que vous avez sélectionnés et de générer des fichiers HTML pour la visualisation des résultats.
+
+Lorsque vous cliquez sur le bouton "FastQC", l'application va procéder à une analyse de la qualité des fichiers que vous avez sélectionnés, en utilisant l'outil FastQC. Les résultats seront ensuite compilés sous forme de fichiers HTML, qui pourront être visualisés directement dans votre navigateur web.
+
+Cette fonctionnalité est particulièrement utile pour évaluer la qualité de vos données avant de les utiliser dans d'autres analyses, telles que l'assemblage de génome ou l'alignement de séquences. Elle vous permet de détecter rapidement les éventuels problèmes de qualité de vos fichiers, tels que des erreurs de séquençage ou une contamination par des séquences étrangères.
+
+.. rubric:: Le bouton MultiQC
+
+Le bouton MultiQC disponible dans la session Manage Samples nous permet de générer des rapports d'analyse de qualité pour un ensemble de fichiers de données. Le fonctionnement de ce bouton est similaire à celui de FastQC. En effet, après avoir sélectionné les fichiers à traiter, le bouton MultiQC les analysera pour en extraire les informations de qualité. Il créera ensuite un rapport global qui présentera les résultats sous forme graphique pour une meilleure compréhension.
+
+MultiQC est particulièrement utile pour la visualisation de résultats provenant de multiples échantillons ou de différentes plates-formes de séquençage. Il permet ainsi de générer des rapports comparatifs pour différentes analyses. Ce bouton peut être utilisé pour des analyses de RNA-Seq, de ChIP-Seq, de métagénomique, entre autres.
 
 
-.. rubric:: Contrôler la qualité : Suppression des artéfacts 
-
+Contrôler la qualité : Suppression des artéfacts 
+------------------------------------------------
 .. image:: ../pictures/-21612.png
  
-.. rubric:: Extraire le pathogène d’intérêts 
-
+Extraire le pathogène d’intérêts 
+--------------------------------
 .. image:: ../pictures/-21642.png
 
-.. rubric:: Pipeline contrôle qualité et double soustraction digital
-
+Pipeline contrôle qualité et double soustraction digital
+--------------------------------------------------------
 .. image:: ../pictures/-21707.png
 
 .. rubric:: Assembler et générer les fichiers consensus 
-
+-------------------------------------------------------
 .. image:: ../pictures/-21738.png
 
 
