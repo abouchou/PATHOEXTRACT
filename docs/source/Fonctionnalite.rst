@@ -24,14 +24,14 @@ Un ensemble de boutons est mis à disposition pour effectuer des actions sur les
 
 L'indexation des fichiers de génomes de référence est une étape nécessaire pour les opérations de soustractions digitales.
 
-Pour indexer un fichier de génome de référence, vous devez d'abord le charger dans l'application via l'importation. Ensuite, sélectionnez le fichier et cliquez sur le bouton ``Index``. Vous serez informé de la progression de l'indexation et recevrez une confirmation de réussite.
+Pour indexer un génome de référence, vous devez le charger dans l'application via l'importation. Ensuite, le sélectionnez puis cliquer sur le bouton ``Index``. Vous serez informé de la progression de l'indexation et recevrez une confirmation de réussite.
 
-Veuillez noter que l'indexation peut prendre du temps en fonction de la taille du fichier et de la puissance de votre ordinateur. Une fois l'indexation terminée, vous pourrez utiliser le fichier dans les traitements ultérieurs de l'application pour une analyse plus rapide et efficace.
+Veuillez noter que l'indexation peut prendre du temps en fonction de la taille du génome de references indexés et de la puissance de votre ordinateur. Une fois l'indexation terminée, vous pourrez utiliser le fichier dans les traitements post séquencage de l'application pour une analyse plus rapide et efficace.
 
 
 .. rubric:: Le bouton check
 
-Le bouton ``Check`` permet de vérifier si un fichier de génome de référence a déjà été indexé dans l'application. Cette fonctionnalité évite de réindexer un fichier déjà présent, permettant ainsi d'économiser du temps. En cliquant sur le bouton ``Check``, s'il a déjà été indexé, le bouton devient vert pour indiquer que l'indexation est présente et peut être utilisée dans les traitements ultérieurs. S'il n'a pas été indexé, le bouton devient rouge et l'utilisateur est invité à cliquer sur le bouton ``Indexer`` pour créer l'index avant de pouvoir l'utiliser dans les traitements ultérieurs.
+Le bouton ``Check`` permet de vérifier si le génome de référence séléctionné a déjà été indexé dans l'application. Cette fonctionnalité évite de réindexer un fichier déjà présent. Un code de couleur vert indique que le génome sélectionné a deja été indexé dans le cas contraire le check renvoi un code de couleur rouge.
 
 
 
@@ -40,11 +40,11 @@ Charger et visualiser la qualité des échantillons/isolats cliniques
 
 .. image:: ../pictures/-21533.png
 
-La session "Manage Samples" permet, comme son nom l'indique, de charger les fichiers dans différents dossiers en fonction du traitement à effectuer.
+La session "Manage Samples" permet, comme son nom l'indique, de charger des fichiers d'échantillons cliniques ( *Fastq*, *Fq*, en *Fastq.gz* ou *Fq.gz*) et de visualiser leur qualité les options logiciel fastqc et multiqc.
 
-Dans le répertoire **Files to All Step**, les fichiers chargés pourront être disponibles dans toutes les analyses. Ce répertoire peut contenir tous les types de fichiers générés par le séquençage de l'ADN tels que les fichiers en *Fastq*, *Fq*, en *Fastq.gz* ou *Fq.gz*.
-
-Le dossier **Files to Run Double Filtering** ne doit contenir que des fichiers en *Fq.gz* pour pouvoir effectuer la double soustraction. Quant au dossier **Files to Generate De Novo**, il ne doit contenir que des fichiers en *Fastq* pour pouvoir effectuer la génération de novo.
+par defaut les échantillons téléchargés sont destinés a l'option **Files to All Step**, les fichiers chargés seront ainsi disponibles dans toutes les analyses. D'autres options de chargement sont disponible : 
+ - **Files to Run Double Filtering** ne doit contenir que des fichiers en *Fq.gz* pour pouvoir effectuer la double soustraction.
+ - **Files to Generate De Novo** ne doit contenir que des fichiers en *Fastq* pour pouvoir effectuer la génération de novo.
 
 Cette organisation permet une gestion efficace des fichiers et évite les erreurs de traitement.
 
