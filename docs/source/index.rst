@@ -17,17 +17,20 @@ The key features of DREPAL-PATHOEXTRACT are explained below:
 
 Contributors:
 
-- Stanislas Egomli ASSOHOUN 1-2
-- Aristide Berenger AKO 2
-- Abouchou Paul Christian AKO2 
-- Catherine DAUGA 3
-- Jérôme Adou. KABLAN 1
-- Ronan JAMBOU 2
+- Stanislas Egomli ASSOHOUN (1)(2)
+- Aristide Berenger AKO (2)
+- Abouchou Paul Christian AKO (2)
+- Catherine DAUGA (3)
+- Jérôme Adou. KABLAN (1)
+- Ronan JAMBOU (2)
 
-1 : LAboratoire de Mécanique et Informatique (LAMI), Université Félix Houphouët Boigny, Abidjan, Côte d’Ivoire,
-2 : Unité de parasitologie mycologie, Institut Pasteur (IPCI), Abidjan, Côte d’Ivoire.
-3 : Unité Arbovirus et Insectes Vecteurs, Institut Pasteur, Paris, France.
-3 : Centre de Recherche Médicale et Sanitaire(CERMES), Niamey, Niger
+1: Laboratory of Mechanics and Computer Science (LAMI), Felix Houphouet-Boigny University, Abidjan, Côte d'Ivoire
+
+2: Parasitology and Mycology Unit, Pasteur Institute (IPCI), Abidjan, Côte d'Ivoire
+
+3: Arbovirus and Vector Insects Unit, Pasteur Institute, Paris, France
+
+4: Medical and Health Research Center (CERMES), Niamey, Niger
 
 .. toctree::
    Installation
