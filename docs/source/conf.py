@@ -4,7 +4,7 @@
 
 project = 'DREPAL-PATHOEXTRACT'
 copyright = '2023, IPCI'
-author = 'Stanislas Egomli ASSOHOUN (1-2) - Aristide Berenger AKO (2) - Abouchou Paul Christian AKO (2) - Catherine DAUGA (3) - Jérôme Adou. KABLAN (1) -Ronan JAMBOU (2)'
+author = 'Stanislas Egomli ASSOHOUN (1-2) - Abouchou Paul Christian AKO (2)'
 
 release = '0.1'
 version = '0.1.0'
