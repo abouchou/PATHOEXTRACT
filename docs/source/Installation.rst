@@ -193,10 +193,10 @@ The "toolskit" directory holds the application's backend. The "app.js" file defi
 
 The "middleware" directory contains middleware files that intercept HTTP requests. The "package.json" file is the application's npm configuration. The "routes" directory contains routes for the main pages of the application, as well as for Conda management, user data, application settings, references used in the application, file downloads, and application users.
 
-The "server.js" file launches the server and listens for incoming connections on the specified port in its code. It's important to note that to ensure proper directory functionality, you need to copy the frontend to the www/html directory of the Apache server and access it from the browser using the URL "localhost/patho". Additionally, remember to run "npm install" in the "toolskit" directory before executing the "pm2 start server.js" command to install the necessary dependencies for the backend.
+
 
 .. note::
-   To ensure the proper functioning of the directories, it is necessary to copy the frontend to the www/html directory of the Apache server. Additionally, before running the "pm2 start server.js" command, make sure to execute the "npm install" command in the "toolskit" directory to install the necessary dependencies for the backend.
+   The "server.js" file launches the server and listens for incoming connections on the specified port in its code. It's important to note that to ensure proper directory functionality, you need to copy the frontend to      the www/html directory of the Apache server and access it from the browser using the URL "localhost/patho". Additionally, remember to run "npm install" in the "toolskit" directory before executing the "pm2 start          server.js" command to install the necessary dependencies for the backend.
 
 
 
