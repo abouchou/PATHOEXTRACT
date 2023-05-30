@@ -4,7 +4,7 @@
 
 project = 'DREPAL-PATHOEXTRACT'
 copyright = '2023, IPCI'
-author = 'Stanislas Egomli ASSOHOUN (1-2) - Abouchou Paul Christian AKO (2)'
+author = 'Institut Pasteur de CI'
 
 release = '0.1'
 version = '0.1.0'
