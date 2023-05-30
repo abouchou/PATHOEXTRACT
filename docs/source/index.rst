@@ -17,12 +17,12 @@ The key features of DREPAL-PATHOEXTRACT are explained below:
 
 Contributors:
 
-Stanislas Egomli ASSOHOUN 1-2
-Aristide Berenger AKO 2
-Abouchou Paul Christian AKO2 
-Catherine DAUGA 3
-Jérôme Adou. KABLAN 1
-Ronan JAMBOU 2
+- Stanislas Egomli ASSOHOUN 1-2
+- Aristide Berenger AKO 2
+- Abouchou Paul Christian AKO2 
+- Catherine DAUGA 3
+- Jérôme Adou. KABLAN 1
+- Ronan JAMBOU 2
 
 1 : LAboratoire de Mécanique et Informatique (LAMI), Université Félix Houphouët Boigny, Abidjan, Côte d’Ivoire,
 2 : Unité de parasitologie mycologie, Institut Pasteur (IPCI), Abidjan, Côte d’Ivoire.
