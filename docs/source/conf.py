@@ -3,8 +3,15 @@
 # -- Project information
 
 project = 'DREPAL-PATHOEXTRACT'
-copyright = '2021, Graziella'
-author = 'Graziella'
+copyright = '2023, IPCI'
+author = [
+    'Stanislas Egomli ASSOHOUN1-2',
+    'Aristide Berenger AKO2',
+    'Abouchou Paul Christian AKO2',
+    'Catherine DAUGA3',
+    'Jérôme Adou. KABLAN1',
+    'Ronan JAMBOU2'
+]
 
 release = '0.1'
 version = '0.1.0'
