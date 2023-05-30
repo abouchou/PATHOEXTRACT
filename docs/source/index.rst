@@ -1,20 +1,32 @@
 DREPAL-PATHOEXTRACT
 ===================
 
-DREPAL-PATHOEXTRACT est un pipeline Snakemake intégré qui permet :
-    - le contrôle qualité;
-    - le filtrage digitale (double soustraction digitale) pour ne retenir que la part d'un pathogene d'interêt porté par des données de sequençage NGS (Illumina) issues d'échantantillons clinique 
-    - et d'assemblage de novo / de génération consensus de la portion du pathogène extrait.
-Selon les ressources materielles disponibles, DREPAL-PATHOEXTRACT prend en charge plusieurs données de séquençage NGS (Illumina) de type paired-end en une seule exécution. Optimisée pour une utilisation sous Linux (Ubuntu), DREPAL-PATHOEXTRACT fournit une interface graphique simple et interactive qui facilite son utilisation par de nombreux scientifiques ne disposant d'expertise bioinformatique adequate.
+DREPAL-PATHOEXTRACT is an integrated Snakemake pipeline that enables:
 
-Les caractéristiques essentielles de DREPAL-PATHOEXTRACT sont expliquées ci-dessous :
+- Quality control
+- Digital filtering (double digital subtraction) to retain only the portion of interest of a pathogen carried by NGS (Illumina) sequencing data from clinical samples
+- De novo assembly / consensus generation of the extracted pathogen portion.
 
-    - Prise en charge des plates-formes NGS : Illumina, 454/Roche et Ion Torrent.
-    
-    - Analyse des données de séquençage à partir defichiers FASTQ de type paired-end avec un encodage de qualité Sanger.
+Depending on the available hardware resources, DREPAL-PATHOEXTRACT supports multiple paired-end NGS (Illumina) sequencing data in a single run. Optimized for Linux (Ubuntu) usage, DREPAL-PATHOEXTRACT provides a simple and interactive graphical interface that facilitates its utilization by many scientists lacking adequate bioinformatics expertise.
 
-    - Analyse simultanée de plusieurs patients/échantillons en une seule exécution.
-    
+The key features of DREPAL-PATHOEXTRACT are explained below:
+
+- NGS platform support: Illumina, 454/Roche, and Ion Torrent.
+- Analysis of sequencing data from paired-end FASTQ files with Sanger quality encoding.
+- Simultaneous analysis of multiple patients/samples in a single run.
+
+Contributors:
+
+- Stanislas Egomli Assohoun: Laboratory of Mechanics and Computer Science (LAMI), Université Félix Houphouët Boigny, Abidjan, Côte d'Ivoire
+- Aristide Berenger Ako: Unit of Parasitology Mycology, Institut Pasteur (IPCI), Abidjan, Côte d'Ivoire
+- Abouchou Paul Christian Ako: Unit of Parasitology Mycology, Institut Pasteur (IPCI), Abidjan, Côte d'Ivoire
+- Catherine Dauga: Arbovirus and Vector Insects Unit, Institut Pasteur, Paris, France
+- Jérôme Adou Kablan: Laboratory of Mechanics and Computer Science (LAMI), Université Félix Houphouët Boigny, Abidjan, Côte d'Ivoire
+- Ronan Jambou: Unit of Parasitology Mycology, Institut Pasteur (IPCI), Abidjan, Côte d'Ivoire
+- Centre de Recherche Médicale et Sanitaire (CERMES), Niamey, Niger
+
+
+
 .. toctree::
    Installation
    DREPAL-PATHOEXTRACT
