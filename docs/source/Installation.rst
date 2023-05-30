@@ -1,210 +1,212 @@
 Installation
 ============
-Télécharger le code source depuis GitHub
-----------------------------------------
 
-    1- Cloner l'application via ce `lien <https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git>`_
-   
-    2- Ouvrez une invite de commande ou un terminal sur votre système.
-   
-    3- Accédez au répertoire dans lequel vous souhaitez cloner le projet.
-   
-    4- Clonez le projet à partir de Git en utilisant la commande suivante :
+Download the Source Code from GitHub
+-----------------------------------
 
-    .. code-block:: bash
-    
-       git clone https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git
+1. Clone the application using this `link <https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git>`_.
 
-    5- Une fois le clonage terminé, accédez au répertoire DREPAL-PATHOEXTRACT en utilisant la commande suivante :
+2. Open a command prompt or terminal on your system.
 
-    .. code-block:: bash
-    
-       cd DREPAL-PATHOEXTRACT
-    
-    6- Suivez les instructions dans le fichier README pour la configuration et l'utilisation de DREPAL-PATHOEXTRACT.
-    
-    .. note::
-        
-       Notez que pour cloner DREPAL-PATHOEXTRACT à partir de Git, vous avez besoin d'un accès Internet et de privilèges administratifs sur votre système.
+3. Navigate to the directory where you want to clone the project.
 
+4. Clone the project from Git using the following command:
 
-Installer les dépendances nécessaires 
--------------------------------------
+   .. code-block:: bash
 
-Installation de Snakemake et des outils de l'environnement de production
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      git clone https://github.com/stanlasso/DREPAL-PATHOEXTRACT.git
+
+5. Once the cloning is complete, navigate to the DREPAL-PATHOEXTRACT directory using the following command:
+
+   .. code-block:: bash
+
+      cd DREPAL-PATHOEXTRACT
+
+6. Follow the instructions in the README file for the configuration and usage of DREPAL-PATHOEXTRACT.
 
 .. note::
-   Avant d'installer Snakemake, nous devons installer Conda. Nous pouvons choisir d'installer Conda à l'emplacement de notre choix. Voici les étapes à suivre :
+
+   Please note that to clone DREPAL-PATHOEXTRACT from Git, you need internet access and administrative privileges on your system.
    
+Install the Required Dependencies
+-------------------------------
+
+Install Snakemake and Production Environment Tools
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+   Before installing Snakemake, we need to install Conda. We can choose to install Conda in the location of our choice. Here are the steps to follow:
+
 .. rubric:: Conda
 
-    1- Accédez à votre répertoire de choix et téléchargez le script d'installation de Miniconda :
+   1. Navigate to your desired directory and download the Miniconda installation script:
 
-    .. code-block:: bash
-    
-        wget https://repo.anaconda.com/miniconda/Miniconda3-py37_23.1.0-1-Linux-x86_64.sh
+      .. code-block:: bash
 
-    2- Exécutez le script d'installation de Miniconda :
+         wget https://repo.anaconda.com/miniconda/Miniconda3-py37_23.1.0-1-Linux-x86_64.sh
 
-    .. code-block:: bash
-    
-       bash Miniconda3-py37_23.1.0-1-Linux-x86_64.sh
+   2. Execute the Miniconda installation script:
 
-    Suivez les instructions pour installer Conda. N'oubliez pas de fermer et de relancer la console après l'installation.
+      .. code-block:: bash
 
-    3- Pour plus de détails sur l'installation de Conda, vous pouvez consulter ce lien_.
+         bash Miniconda3-py37_23.1.0-1-Linux-x86_64.sh
+
+      Follow the instructions to install Conda. Remember to close and reopen the console after installation.
+
+   3. For more details on Conda installation, you can refer to this link_.
 
 .. rubric:: Snakemake (Minimal installation)
 
-Une fois Conda installé, nous pouvons installer Snakemake. Voici les étapes à suivre :
+   Once Conda is installed, we can proceed with installing Snakemake. Here are the steps to follow:
 
-    1- Toujours dans votre répertoire de choix, installez Mamba :
+   1. Still in your desired directory, install Mamba:
 
-    .. code-block:: bash
-    
-       conda install -n base -c conda-forge mamba
+      .. code-block:: bash
 
-    2- Installez la version minimale de Snakemake avec Mamba :
+         conda install -n base -c conda-forge mamba
 
-    .. code-block:: bash
-    
-       mamba create -c bioconda -c conda-forge -n snakemake snakemake-minimal
+   2. Install the minimal version of Snakemake with Mamba:
 
-    3- Vérifiez que Snakemake est correctement installé en exécutant les commandes suivantes :
+      .. code-block:: bash
 
-    .. code-block:: bash
-       
-       conda activate snakemake
-       snakemake
+         mamba create -c bioconda -c conda-forge -n snakemake snakemake-minimal
 
-    4- Pour plus d'informations sur l'installation de Snakemake, vous pouvez consulter ce `lien <https://snakemake.readthedocs.io/en/stable/getting_started/installation.html>`_
-    
-Installation de PM2 et du serveur Apache
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   3. Verify that Snakemake is properly installed by executing the following commands:
 
-.. rubric:: Installation de PM2
+      .. code-block:: bash
 
+         conda activate snakemake
+         snakemake
 
-   Avant d'installer PM2, il faut d'abord installer npm en suivant les étapes suivantes :
+   4. For more information on Snakemake installation, you can refer to this `link <https://snakemake.readthedocs.io/en/stable/getting_started/installation.html>`_.
 
-    1- Ouvrez un terminal et mettez à jour les paquets existants en exécutant la commande suivante :
+PM2 and Apache Server Installation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    .. code-block:: bash
-      
-       sudo apt update
-
-    2- Installez Node.js en utilisant la commande suivante :
-
-    .. code-block:: bash
-      
-       sudo apt install nodejs
-
-    3- Vérifiez la version de Node.js et npm pour vous assurer que l'installation a réussi en utilisant les commandes suivantes :
-
-    .. code-block:: bash
-       
-       node -v
-       npm -v
-
-    4- Si npm n'est pas installé, installez le gestionnaire de paquets npm en utilisant la commande suivante :
-
-    .. code-block:: bash
-       
-       sudo apt install npm
-
-    5- Une fois npm installé, vous pouvez installer PM2 en exécutant la commande suivante :
-
-    .. code-block:: bash
-       
-       sudo npm install pm2 -g
+.. rubric:: PM2 Installation
 
 
+   Before installing PM2, we need to first install npm by following the steps below:
 
-.. rubric:: Installation serveur Apache
+   1. Open a terminal and update the existing packages by running the following command:
 
-    1- Ouvrez un terminal et mettez à jour les paquets existants avec la commande suivante :
+      .. code-block:: bash
 
-    .. code-block:: bash
-       
-       sudo apt update
+         sudo apt update
 
-    2- Installez le serveur Apache en utilisant la commande suivante :
+   2. Install Node.js using the following command:
 
-    .. code-block:: bash
-       
-       sudo apt install apache2
+      .. code-block:: bash
 
-    3- Une fois l'installation terminée, vérifiez si le serveur Apache est en cours d'exécution avec la commande suivante :
+         sudo apt install nodejs
 
-    .. code-block:: bash
-       
-       sudo systemctl status apache2
+   3. Verify the version of Node.js and npm to ensure the installation was successful, using the following commands:
 
-    4- Si Apache n'est pas en cours d'exécution, vous pouvez le démarrer en utilisant la commande suivante :
+      .. code-block:: bash
 
-    .. code-block:: bash
-       
-       sudo service apache2 start
+         node -v
+         npm -v
 
-    5- Si Apache est en cours d'exécution, vous devriez voir un message indiquant que le service est actif et en cours d'exécution.
+   4. If npm is not installed, install the npm package manager using the following command:
 
-    6- Si vous avez un pare-feu en cours d'exécution sur votre serveur, vous devez autoriser les connexions entrantes sur le port 80 (HTTP) avec la commande suivante :
+      .. code-block:: bash
 
-    .. code-block:: bash
-       
-       sudo ufw allow http
+         sudo apt install npm
 
-    7- Vous pouvez maintenant accéder à votre serveur Apache en ouvrant un navigateur et en saisissant l'adresse IP de votre serveur (localhost). Par défaut, la page d'accueil d'Apache devrait s'afficher. Vous pouvez également placer votre site web dans le répertoire /var/www/html/ et y accéder via un navigateur en saisissant l'adresse IP de votre serveur.
+   5. Once npm is installed, you can install PM2 by executing the following command:
 
-Installation des composants du backend (Toolskit)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      .. code-block:: bash
 
-.. rubric:: Architecture de l'application
+         sudo npm install pm2 -g
 
-L'application est basée sur une architecture full-stack, composée de deux dossiers distincts : le frontend et le backend. Le dossier frontend contient le build d'Angular, tandis que le dossier toolskit contient le backend codé en Node.js Express. Pour assurer le bon fonctionnement des répertoires, il est recommandé de copier le contenu du dossier frontend dans le répertoire www/html du serveur Apache. Pour ce faire, exécutez la commande suivante :
+
+
+.. rubric:: Apache Server Installation
+
+   1. Open a terminal and update the existing packages using the following command:
+
+      .. code-block:: bash
+
+         sudo apt update
+
+   2. Install the Apache server using the following command:
+
+      .. code-block:: bash
+
+         sudo apt install apache2
+
+   3. Once the installation is complete, check if the Apache server is running by using the following command:
+
+      .. code-block:: bash
+
+         sudo systemctl status apache2
+
+   4. If Apache is not running, you can start it using the following command:
+
+      .. code-block:: bash
+
+         sudo service apache2 start
+
+   5. If Apache is running, you should see a message indicating that the service is active and running.
+
+   6. If you have a firewall running on your server, you need to allow incoming connections on port 80 (HTTP) using the following command:
+
+      .. code-block:: bash
+
+         sudo ufw allow http
+
+   7. You can now access your Apache server by opening a browser and entering your server's IP address (localhost). By default, the Apache default page should be displayed. You can also place your website files in the /var/www/html/ directory and access it through a browser by entering your server's IP address.
+   
+   
+Backend Components (Toolskit) Installation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. rubric:: Application Architecture
+
+The application is based on a full-stack architecture, consisting of two distinct folders: the frontend and the backend. The frontend folder contains the Angular build, while the toolskit folder contains the backend coded in Node.js Express. To ensure the proper functioning of the directories, it is recommended to copy the contents of the frontend folder to the www/html directory of the Apache server. To do this, execute the following command:
 
 .. code-block:: bash
 
    DREPAL-PATHOEXTRACT$ sudo cp -r patho /var/www/html/
 
-Ensuite, ouvrez votre navigateur et saisissez l'URL localhost/patho pour accéder à l'application.
+Then, open your browser and enter the URL localhost/patho to access the application.
 
-Concernant le dossier toolskit, il est important de noter que les dépendances du backend doivent être installées avant de lancer l'application. Pour cela, accédez au répertoire toolskit et exécutez la commande suivante :
+Regarding the toolskit folder, it is important to note that the backend dependencies need to be installed before launching the application. To do this, navigate to the toolskit directory and execute the following command:
 
 .. code-block:: bash
 
    npm install
 
-Cette commande installe toutes les dépendances nécessaires au bon fonctionnement de l'application. Une fois l'installation terminée, vous pouvez lancer le backend en utilisant la commande suivante dans le répertoire toolskit :
+This command installs all the dependencies required for the proper functioning of the application. Once the installation is complete, you can start the backend by using the following command in the toolskit directory:
 
 .. code-block:: bash
 
    pm2 start server.js
 
-.. rubric:: Arborescence
+.. rubric:: Directory Structure
 
-Dans le dossier "patho", vous trouverez plusieurs fichiers et dossiers essentiels à l'application. 
-- Le fichier "index.html" est la page d'accueil de l'application. Les fichiers JavaScript sont situés dans le dossier "assets". 
+In the "patho" folder, you will find several essential files and folders for the application.
+- The "index.html" file is the home page of the application. The JavaScript files are located in the "assets" folder.
 
-- Le fichier "styles.99f4b67f677e816d.css" contient les styles de l'application, tandis que le fichier "polyfills.d3e1f472fbd76fc8.js" assure la compatibilité avec les navigateurs.
+- The "styles.99f4b67f677e816d.css" file contains the styles of the application, while the "polyfills.d3e1f472fbd76fc8.js" file ensures browser compatibility.
 
-- Le dossier "toolskit" contient le backend de l'application. Le fichier "app.js" définit les routes de l'application et comment chaque route doit être gérée. 
+- The "toolskit" folder contains the backend of the application. The "app.js" file defines the routes of the application and how each route should be handled.
 
-- Le dossier "controllers" contient les fichiers de contrôleurs qui gèrent la logique métier de l'application. 
+- The "controllers" folder contains the controller files that handle the business logic of the application.
 
-- Le dossier "data" contient les fichiers de données de l'application, tels que les informations sur les fichiers chargés dans l'application, les paramètres de configuration et les informations sur les utilisateurs. 
+- The "data" folder contains the data files of the application, such as information about the files loaded in the application, configuration parameters, and user information.
 
-- Le dossier "middleware" contient les fichiers de middleware qui interceptent les requêtes HTTP.
+- The "middleware" folder contains the middleware files that intercept HTTP requests.
 
-- Le fichier "package.json" est la configuration npm de l'application. 
+- The "package.json" file is the npm configuration of the application.
 
-- Le dossier "routes" contient les routes pour les pages principales de l'application, ainsi que pour la gestion de Conda, les données des utilisateurs, les paramètres de l'application, les références utilisées dans l'application, les téléchargements de fichiers et les utilisateurs de l'application. 
+- The "routes" folder contains the routes for the main pages of the application, as well as for Conda management, user data, application settings, references used in the application, file downloads, and application users.
 
-- Le fichier "server.js" lance le serveur et écoute les connexions entrantes sur le port spécifié dans le code du fichier "server.js".
+- The "server.js" file launches the server and listens for incoming connections on the specified port in the "server.js" file's code.
 
 .. note::
-   Pour assurer le bon fonctionnement des répertoires, il est nécessaire de copier le frontend dans le répertoire www/html du serveur Apache. De plus, avant de lancer la commande "pm2 start server.js",        assurez-vous d'exécuter la commande "npm install" dans le répertoire "toolskit" pour installer les dépendances nécessaires au backend.
+   To ensure the proper functioning of the directories, it is necessary to copy the frontend to the www/html directory of the Apache server. Additionally, before running the "pm2 start server.js" command, make sure to execute the "npm install" command in the "toolskit" directory to install the necessary dependencies for the backend.
+
 
 
 
