@@ -4,7 +4,7 @@
 
 project = 'DREPAL-PATHOEXTRACT'
 copyright = '2023, IPCI'
-author = 'Institut Pasteur de CI'
+author = ' IPCI'
 
 release = '0.1'
 version = '0.1.0'
