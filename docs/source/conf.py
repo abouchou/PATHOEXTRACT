@@ -19,6 +19,17 @@ extensions = [
     'sphinx.ext.intersphinx',
 ]
 
+
+# Add contributors
+contributors = [
+    'Stanislas Egomli ASSOHOUN1-2',
+    'Aristide Berenger AKO2',
+    'Abouchou Paul Christian AKO2',
+    'Catherine DAUGA3',
+    'Jérôme Adou. KABLAN1',
+    'Ronan JAMBOU2'
+]
+
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
