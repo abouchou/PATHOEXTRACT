@@ -183,26 +183,17 @@ This command installs all the dependencies required for the proper functioning o
 
    pm2 start server.js
 
-.. rubric:: Directory Structure
+.. rubric:: Directory Structure patho
 
-In the "patho" folder, you will find several essential files and folders for the application.
-- The "index.html" file is the home page of the application. The JavaScript files are located in the "assets" folder.
+In the "patho" directory, you'll find essential files and folders for the application. The "index.html" file serves as the application's homepage. JavaScript files are located in the "assets" folder. The "styles.99f4b67f677e816d.css" file contains the application's styles, and "polyfills.d3e1f472fbd76fc8.js" ensures browser compatibility.
 
-- The "styles.99f4b67f677e816d.css" file contains the styles of the application, while the "polyfills.d3e1f472fbd76fc8.js" file ensures browser compatibility.
+.. rubric:: Directory Structure toolskit
 
-- The "toolskit" folder contains the backend of the application. The "app.js" file defines the routes of the application and how each route should be handled.
+The "toolskit" directory holds the application's backend. The "app.js" file defines the application's routes and how each route should be handled. The "controllers" directory contains controller files that manage the application's business logic. The "data" directory contains data files such as information about files loaded in the application, configuration parameters, and user information.
 
-- The "controllers" folder contains the controller files that handle the business logic of the application.
+The "middleware" directory contains middleware files that intercept HTTP requests. The "package.json" file is the application's npm configuration. The "routes" directory contains routes for the main pages of the application, as well as for Conda management, user data, application settings, references used in the application, file downloads, and application users.
 
-- The "data" folder contains the data files of the application, such as information about the files loaded in the application, configuration parameters, and user information.
-
-- The "middleware" folder contains the middleware files that intercept HTTP requests.
-
-- The "package.json" file is the npm configuration of the application.
-
-- The "routes" folder contains the routes for the main pages of the application, as well as for Conda management, user data, application settings, references used in the application, file downloads, and application users.
-
-- The "server.js" file launches the server and listens for incoming connections on the specified port in the "server.js" file's code.
+The "server.js" file launches the server and listens for incoming connections on the specified port in its code. It's important to note that to ensure proper directory functionality, you need to copy the frontend to the www/html directory of the Apache server and access it from the browser using the URL "localhost/patho". Additionally, remember to run "npm install" in the "toolskit" directory before executing the "pm2 start server.js" command to install the necessary dependencies for the backend.
 
 .. note::
    To ensure the proper functioning of the directories, it is necessary to copy the frontend to the www/html directory of the Apache server. Additionally, before running the "pm2 start server.js" command, make sure to execute the "npm install" command in the "toolskit" directory to install the necessary dependencies for the backend.
