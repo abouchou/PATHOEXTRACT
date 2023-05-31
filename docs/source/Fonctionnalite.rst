@@ -1,116 +1,123 @@
-Fonctionnalités Générales
-=========================
+General Features
+================
 
-Pathoextract fournit un ensemble de fonctionnalités telles que décrites dans la figure ci-dessous
+Pathoextract provides a set of features as described in the figure below:
 
 .. image:: ../pictures/gen.png
-   :alt: Fonctionalité generale
-
-Charger les fichiers de références des hôtes / pathogènes
----------------------------------------------------------
+   :alt: General Features
+   
+Load Host/Pathogen Reference Files
+----------------------------------
 
 .. image:: ../pictures/-21504.png
 
-Pour importer un fichier de génome de référence, vous pouvez commencer par cliquer sur le bouton ``Select files`` qui vous permettra de sélectionner le ou les fichiers que vous souhaitez importer. L'application prend en charge les fichiers avec les extensions telles que ``.fasta``, ``.fa``, ``.fna``.
+To import a reference genome file, you can start by clicking the "Select files" button, which allows you to choose the file(s) you want to import. The application supports files with extensions such as ".fasta", ".fa", and ".fna".
 
-Il est important de noter que si vous changez d'avis ou que vous sélectionnez le mauvais fichier, le bouton ``Close`` vous permettra d'annuler la sélection des fichiers. De cette manière, vous pouvez vous assurer d'importer les fichiers de génomes de référence appropriés pour vos analyses.
+It is important to note that if you change your mind or select the wrong file, the "Close" button allows you to cancel the file selection. This way, you can ensure that you import the appropriate reference genome files for your analyses.
 
-Une fois les fichiers sélectionnés, vous pouvez cliquer sur le bouton ``Upload`` pour charger les fichiers dans l'application. Vous serez informé de la progression du téléchargement et une fois terminé, vous verrez une confirmation de réussite.
+Once the files are selected, you can click the "Upload" button to load the files into the application. You will be informed about the progress of the upload, and once it's completed, you will see a confirmation of success.
 
-Un ensemble de boutons est mis à disposition pour effectuer des actions sur les fichiers de génomes de référence, tels que l'indexation et la suppression.
-
-
-.. rubric:: Le bouton index
-
-L'indexation des fichiers de génomes de référence est une étape nécessaire pour les opérations de soustractions digitales.
-
-Pour indexer un génome de référence, vous devez le charger dans l'application via l'importation. Ensuite, le sélectionnez puis cliquer sur le bouton ``Index``. Vous serez informé de la progression de l'indexation et recevrez une confirmation de réussite.
-
-Veuillez noter que l'indexation peut prendre du temps en fonction de la taille du génome de references indexés et de la puissance de votre ordinateur. Une fois l'indexation terminée, vous pourrez utiliser le fichier dans les traitements post séquencage de l'application pour une analyse plus rapide et efficace.
+A set of buttons is provided to perform actions on the reference genome files, such as indexing and deletion.
 
 
-.. rubric:: Le bouton check
+.. rubric:: The Index button
 
-Le bouton ``Check`` permet de vérifier si le génome de référence séléctionné a déjà été indexé dans l'application. Cette fonctionnalité évite de réindexer un fichier déjà présent. Un code de couleur vert indique que le génome sélectionné a deja été indexé dans le cas contraire le check renvoi un code de couleur rouge.
+Indexing reference genome files is a necessary step for digital subtractions operations.
+
+To index a reference genome, you need to load it into the application through the import. Then, select it and click the "Index" button. You will be informed about the progress of indexing and receive a confirmation of success.
+
+Please note that indexing may take time depending on the size of the indexed reference genome and the power of your computer. Once indexing is completed, you will be able to use the file in the post-sequencing processing of the application for faster and more efficient analysis.
 
 
+.. rubric:: The Check button
 
-Charger et visualiser la qualité des échantillons/isolats cliniques
--------------------------------------------------------------------
+The "Check" button allows you to check if the selected reference genome has already been indexed in the application. This feature prevents reindexing a file that is already present. A green color code indicates that the selected genome has already been indexed, while a red color code indicates that it hasn't been indexed.
+
+
+Load and Visualize Quality of Clinical Samples/Isolates
+------------------------------------------------------
 
 .. image:: ../pictures/-21533.png
 
-La session "Manage Samples" permet, comme son nom l'indique, de charger des fichiers d'échantillons cliniques ( *Fastq*, *Fq*, en *Fastq.gz* ou *Fq.gz*) et de visualiser leur qualité les options logiciel fastqc et multiqc. Par defaut les échantillons téléchargés sont destinés a l'option **Files to All Step**, les fichiers chargés seront ainsi disponibles dans toutes les analyses. D'autres options de chargement sont disponible : 
+The "Manage Samples" session allows you to load clinical sample files (*Fastq*, *Fq*, in *Fastq.gz* or *Fq.gz*) and visualize their quality using the FastQC and MultiQC software options. By default, the downloaded samples are intended for the "Files to All Step" option, where the loaded files will be available for all analyses. Other loading options are available:
 
- - **Files to Run Double Filtering** ne doit contenir que des fichiers en *Fq.gz* pour pouvoir effectuer la double soustraction.
- - **Files to Generate De Novo** ne doit contenir que des fichiers en *Fastq* pour pouvoir effectuer la génération de novo.
+- **Files to Run Double Filtering** should only contain *Fq.gz* files for performing double subtraction.
+- **Files to Generate De Novo** should only contain *Fastq* files for de novo generation.
 
-Cette organisation permet une gestion efficace des fichiers et évite les erreurs de traitement.
+This organization enables efficient file management and prevents processing errors.
 
-Contrôler la qualité : Suppression des artéfacts 
-------------------------------------------------
+Quality Control: Artifact Removal
+---------------------------------
+
 .. image:: ../pictures/-21612.png
- 
-La session "Quality Control" ajuste la qualité des échantillons patients les preparant ainsi aux differents analyses post séquensage.
 
-Extraire le pathogène d’intérêts 
---------------------------------
+The "Quality Control" session adjusts the quality of patient samples, preparing them for further post-sequencing analyses.
+
+
+Extract Target Pathogen
+-----------------------
+
 .. image:: ../pictures/-21642.png
 
-La session "Double Digital Filtering" extrait la part de read correspondant a un pathogene d'interet porté par les echantillons patients (hôte humain)
+The "Double Digital Filtering" session extracts the portion of reads corresponding to a target pathogen of interest carried by patient samples (human host).
 
-Pipeline contrôle qualité et double soustraction digital
---------------------------------------------------------
+
+Quality Control and Double Digital Subtraction Pipeline
+------------------------------------------------------
+
 .. image:: ../pictures/-21707.png
 
-La partie Pipeline de notre application regroupe deux étapes essentielles de Contrôle Qualité et de Double Soustraction Digitale.
+The Pipeline section of our application combines two essential steps: Quality Control and Double Digital Subtraction.
 
-Assembler et générer les fichiers consensus 
--------------------------------------------
 
-La partie "Assembler et générer les fichiers consensus" se déroule en trois phases essentielles :
+Assemble and Generate Consensus Files
+-------------------------------------
 
-.. rubric:: 1. Eclater le génome de réference du pathogene d'interêt 
+The "Assemble and Generate Consensus Files" section consists of three essential phases:
+
+.. rubric:: 1. Split Reference Pathogen Genome
 .. image:: ../pictures/-171555.png
-Cette étape consiste à décomposer le génome du pathogène d'intérêt en fragments correspondant à chaque chromosome. Cela permet de préparer les données pour la géneration du fichier consensus.
 
-.. rubric:: 2. Assemblage 
+This step involves breaking down the genome of the target pathogen into fragments corresponding to each chromosome. This prepares the data for generating the consensus file.
+
+.. rubric:: 2. Assembly
 .. image:: ../pictures/-171610.png
-Dans cette étape, les fragments de séquences sont alignés et combinés pour reconstruire la séquence complète du génome. Il est important de prendre en compte la ploïdie du pathogène pour obtenir un assemblage précis.
 
-.. rubric:: 3. Génération des consensus 
+In this step, sequence fragments are aligned and combined to reconstruct the complete sequence of the genome. It is important to consider the ploidy of the pathogen for accurate assembly.
+
+.. rubric:: 3. Consensus Generation
 .. image:: ../pictures/-171625.png
-Une fois l'assemblage terminé, des fichiers consensus sont générés. Ils représentent la séquence la plus probable pour chaque position du génome, en prenant en compte les variations et les erreurs présentes dans les fragments de séquences.
 
-Ces trois étapes permettent d'obtenir une représentation complète et fiable du génome du pathogène d'intérêt, facilitant ainsi les analyses ultérieures et les découvertes scientifiques.
+Once the assembly is complete, consensus files are generated. They represent the most probable sequence for each position of the genome, taking into account variations and errors present in the sequence fragments.
 
-Les autres fonctionnalités 
---------------------------
+These three steps provide a complete and reliable representation of the target pathogen's genome, facilitating further analysis and scientific discoveries.
 
-.. rubric:: Le champ filter 
- 
-Le champ ``"Filter"`` dans notre application est un outil de recherche très utile qui permet de rechercher des fichiers de génomes de référence en fonction de divers critères, tels que le nom de fichier, l'extension de fichier, la date de modification ou même la taille du fichier.
-Par exemple, si vous recherchez un fichier spécifique, vous pouvez simplement saisir une partie de son nom ou de son extension dans le champ ``"Filter"``, et l'application affichera tous les fichiers correspondants à votre recherche.
-De même, si vous avez besoin de trier les fichiers en fonction de leur taille ou de leur date de modification, vous pouvez simplement utiliser le champ ``"Filter"`` en spécifiant ces critères dans la recherche.
-En somme, le champ ``"Filter"`` de notre application est un outil de recherche flexible et puissant qui permet aux utilisateurs de trouver rapidement et facilement les fichiers de génomes de référence dont ils ont besoin pour leur travail.
+Other Features
+--------------
 
-.. rubric:: Le bouton Delete 
+.. rubric:: The Filter field
 
-Le bouton ``"Delete"`` est une fonctionnalité importante de notre application qui permet de supprimer les fichiers sélectionnés dans la liste des répertoires. Pour utiliser cette fonctionnalité, vous pouvez d'abord sélectionner les fichiers que vous souhaitez supprimer en cochant les cases à côté des noms de fichiers dans la liste.
-Une fois que vous avez sélectionné les fichiers à supprimer, vous pouvez cliquer sur le bouton ``"Delete"`` pour lancer le processus de suppression. Cette étape est importante car la suppression des fichiers est définitive et il ne sera pas possible de récupérer les fichiers supprimés.
-Les fichiers seront supprimés de la liste des répertoires et de l'application. Cette fonctionnalité peut être très utile pour supprimer les fichiers obsolètes ou inutiles, libérant ainsi de l'espace disque pour de nouveaux fichiers à importer.
+The "Filter" field in our application is a very useful search tool that allows you to search for reference genome files based on various criteria, such as file name, file extension, modification date, or even file size.
+For example, if you are looking for a specific file, you can simply enter part of its name or extension in the "Filter" field, and the application will display all files matching your search.
+Similarly, if you need to sort files based on their size or modification date, you can simply use the "Filter" field and specify these criteria in the search.
+In summary, the "Filter" field in our application is a flexible and powerful search tool that enables users to quickly and easily find the reference genome files they need for their work.
 
-.. rubric:: Le bouton Status	
+.. rubric:: The Delete button
 
-Le bouton ``"Status"`` nous permet de savoir si un processus s'est bien déroulé ou non. Ce bouton affiche trois couleurs différentes pour indiquer l'état du processus : rouge, jaune et vert.
-La couleur rouge indique que le processus ne s'est pas bien déroulé, souvent en raison d'une erreur système. Par exemple, cela peut être dû à un fichier qui n'est pas correctement formaté ou qui ne peut pas être trouvé. Si vous rencontrez une erreur rouge, il est recommandé de télécharger le fichier journal associé pour voir le détail de l'erreur et déterminer la cause du problème.
-La couleur jaune indique que le processus s'est bien déroulé mais pas à 100%. Cela peut indiquer que vous êtes en train de retraiter les mêmes fichiers ou que certains fichiers ont été ignorés. Il est également conseillé de vérifier les journaux associés pour obtenir plus d'informations sur les fichiers traités.
-Enfin, la couleur verte indique que le processus s'est bien déroulé à 100% et que toutes les opérations ont été effectuées avec succès. Il n'y a pas besoin de vérifier les journaux associés dans ce cas.
-Le bouton ``"Status"`` est un moyen facile de vérifier l'état des processus et de savoir si tout s'est bien passé. Il est important de noter que les journaux associés fournissent des informations détaillées pour aider à résoudre les erreurs et les problèmes éventuels.
+The "Delete" button is an important feature of our application that allows you to delete the selected files in the directory list. To use this feature, you can first select the files you want to delete by checking the checkboxes next to the file names in the list.
+Once you have selected the files to delete, you can click the "Delete" button to initiate the deletion process. This step is important as file deletion is permanent, and deleted files cannot be recovered.
+The files will be removed from the directory list and from the application. This feature can be very useful for removing obsolete or unnecessary files, freeing up disk space for new files to import.
 
-.. rubric:: Le bouton Download Log
+.. rubric:: The Status button
 
-Ce bouton est une fonctionnalité très utile de notre application. En effet, il permet de visualiser toutes les opérations qui ont été effectuées lors des différents processus de l'application. En cliquant sur ce bouton, un fichier texte sera téléchargé directement depuis le navigateur.
-Le fichier log contient toutes les informations relatives aux opérations effectuées dans l'application, y compris les erreurs et les avertissements. Il peut donc être très utile pour diagnostiquer les problèmes et les erreurs qui peuvent survenir lors des processus de traitement de données.
-Il est important de noter que les fichiers logs sont généralement volumineux. Il est donc recommandé de prendre des mesures de sécurité appropriées pour stocker et gérer ces fichiers.
+The "Status" button allows us to know whether a process has been successful or not. This button displays three different colors to indicate the state of the process: red, yellow, and green.
+The red color indicates that the process did not run successfully, often due to a system error. For example, this could be due to a file that is not properly formatted or cannot be found. If you encounter a red error, it is recommended to download the associated log file to see the error details and determine the cause of the problem.
+The yellow color indicates that the process ran successfully but not 100%. This may indicate that you are reprocessing the same files or that some files were ignored. It is also advisable to check the associated logs for more information about the processed files.
+Finally, the green color indicates that the process ran successfully at 100% and all operations were completed successfully. There is no need to check the associated logs in this case.
+The "Status" button is an easy way to check the status of processes and see if everything went well. It is important to note that the associated logs provide detailed information to help troubleshoot errors and issues.
 
+.. rubric:: The Download Log button
+
+The "Download Log" button is a very useful feature of our application. It allows you to view all the operations that have been performed during the various processes of the application. By clicking this button, a text file will be downloaded directly from the browser.
+The log file contains all the information related to the operations performed in the application, including errors and warnings. It can be very helpful in diagnosing problems and errors that may occur during data processing processes.
+It is important to note that log files are typically large. Therefore, it is recommended to take appropriate security measures to store and manage these files.
