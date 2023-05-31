@@ -1,32 +1,33 @@
-
-
-Analyses des échantillons 
-=========================
+Sample Analysis
+===============
 
 .. rubric:: Manage samples 
  
-.. strong:: Importer les fichiers
+.. strong:: Importing files
 
-La session "Manage Samples" permet, comme son nom l'indique, de charger les fichiers dans différents dossiers en fonction du traitement à effectuer. Dans le répertoire "Files to All Step", les fichiers chargés pourront être disponibles dans toutes les analyses. Ce répertoire peut contenir tous les types de fichiers générés par le séquençage de l'ADN tels que les fichiers en Fastq, Fq, en Fastq.gz ou Fq.gz.
+The "Manage Samples" session allows you to load files into different folders based on the desired analysis. In the "Files to All Step" directory, the loaded files will be available for all analyses. This directory can contain various file types generated from DNA sequencing, such as Fastq, Fq, Fastq.gz, or Fq.gz files.
 
-Le dossier "Files to Run Double Filtering" ne doit contenir que des fichiers en Fq.gz pour pouvoir effectuer la double soustraction. Quant au dossier "Files to Generate De Novo", il ne doit contenir que des fichiers en Fastq pour pouvoir effectuer la génération de novo.
+The "Files to Run Double Filtering" folder should only contain Fq.gz files for performing double subtraction. As for the "Files to Generate De Novo" folder, it should only contain Fastq files for de novo generation.
 
-Cette organisation permet une gestion efficace des fichiers et évite les erreurs de traitement.
+This organization enables efficient file management and prevents processing errors.
 
-.. strong:: Le bouton FastQC
+.. strong:: The FastQC button
 
-La session "Manage samples" de notre application offre une fonctionnalité intéressante pour visualiser les fichiers que vous avez chargés dans l'application, peu importe leur extension (que ce soit des fichiers paired-end ou single-end), grâce au bouton "FastQC". Ce dernier permet de traiter les fichiers que vous avez sélectionnés et de générer des fichiers HTML pour la visualisation des résultats.
+The "Manage Samples" session in our application offers an interesting feature to visualize the files you have loaded, regardless of their extension (whether paired-end or single-end files), using the "FastQC" button. This button processes the selected files and generates HTML files for result visualization.
 
-Lorsque vous cliquez sur le bouton "FastQC", l'application va procéder à une analyse de la qualité des fichiers que vous avez sélectionnés, en utilisant l'outil FastQC. Les résultats seront ensuite compilés sous forme de fichiers HTML, qui pourront être visualisés directement dans votre navigateur web.
+When you click the "FastQC" button, the application will analyze the quality of the selected files using the FastQC tool. The results will be compiled into HTML files, which can be viewed directly in your web browser.
 
-Cette fonctionnalité est particulièrement utile pour évaluer la qualité de vos données avant de les utiliser dans d'autres analyses, telles que l'assemblage de génome ou l'alignement de séquences. Elle vous permet de détecter rapidement les éventuels problèmes de qualité de vos fichiers, tels que des erreurs de séquençage ou une contamination par des séquences étrangères.
+This feature is particularly useful for evaluating the quality of your data before using them in other analyses, such as genome assembly or sequence alignment. It allows you to quickly detect any quality issues in your files, such as sequencing errors or contamination with foreign sequences.
 
-.. strong:: Le bouton MultiQC
+.. strong:: The MultiQC button
 
-Le bouton MultiQC disponible dans la session Manage Samples nous permet de générer des rapports d'analyse de qualité pour un ensemble de fichiers de données. Le fonctionnement de ce bouton est similaire à celui de FastQC. En effet, après avoir sélectionné les fichiers à traiter, le bouton MultiQC les analysera pour en extraire les informations de qualité. Il créera ensuite un rapport global qui présentera les résultats sous forme graphique pour une meilleure compréhension.
+The MultiQC button available in the "Manage Samples" session allows us to generate quality analysis reports for a set of data files. Its functionality is similar to FastQC. After selecting the files to process, the MultiQC button will analyze them to extract quality information. It will then create a comprehensive report presenting the results in graphical form for better understanding.
 
-MultiQC est particulièrement utile pour la visualisation de résultats provenant de multiples échantillons ou de différentes plates-formes de séquençage. Il permet ainsi de générer des rapports comparatifs pour différentes analyses. Ce bouton peut être utilisé pour des analyses de RNA-Seq, de ChIP-Seq, de métagénomique, entre autres.
+MultiQC is especially useful for visualizing results from multiple samples or different sequencing platforms. It enables the generation of comparative reports for various analyses. This button can be used for RNA-Seq, ChIP-Seq, metagenomics, and other types of analyses.
 
+
+Quality Control
+---------------
 
 .. rubric:: Quality Control
  
@@ -34,26 +35,26 @@ MultiQC est particulièrement utile pour la visualisation de résultats provenan
    :alt: Quality Control
    
 
-La session Quality Control permet de nettoyer les échantillons avant de passer à l'étape suivante de l'analyse. Cette étape est cruciale car elle permet de s'assurer de la qualité des données avant de les utiliser pour des analyses plus poussées. Après avoir visualisé les fichiers avec FastQC et MultiQC, cette session permet de gérer différents paramètres (création, mise à jour et suppression) et de les rappeler pour traiter les fichiers chargés dans le dossier File to All Step.
-Le bouton ''run'' exécute l'outil TrimGalore pour nettoyer les fichiers d'échantillons. TrimGalore est un outil de qualité qui est utilisé pour nettoyer les fichiers d'échantillons en éliminant les mauvais reads, en supprimant les duplicatas, etc. Il est conçu pour traiter les fichiers d'échantillons pair-end et permet de couper les mauvais reads.
-La session Quality Control permet de garantir que les échantillons utilisés dans les analyses sont de la meilleure qualité possible en nettoyant les données brutes. Cela permet de s'assurer que les résultats obtenus par la suite seront fiables et précis.
+The Quality Control session allows for sample cleaning before proceeding to the next step of the analysis. This step is crucial as it ensures the quality of the data before using them in more advanced analyses. After visualizing the files with FastQC and MultiQC, this session enables the management of different parameters (creation, update, and deletion) and their application to the files loaded in the "File to All Step" directory.
+The "run" button executes the TrimGalore tool to clean the sample files. TrimGalore is a quality control tool used to clean sample files by removing poor reads, eliminating duplicates, and more. It is designed to handle paired-end sample files and can trim the poor reads.
+The Quality Control session ensures that the samples used in the analyses are of the highest possible quality by cleaning the raw data. This ensures that the subsequent results will be reliable and accurate.
 
 
-.. rubric:: Double digital filtering
+Double Digital Filtering
+-----------------------
 
 .. image:: ../pictures/-21642.png
    :alt: Double digital filtering
     
-La session Double Digital Filtering consiste en effet à extraire le génome du pathogène d'intérêt à partir des échantillons provenant de l'hôte humain. Cela se fait en filtrant les séquences par paire-end pour éliminer les séquences de mauvaise qualité et en utilisant les génomes de référence déjà indexés depuis la session Genome de Références pour aligner les séquences sur le génome ciblé. Le résultat final de cette session est le fichier pathomapped contenant les pathogènes extraits de l'hôte qui ont bien mappé sur le génome du pathogène d'intérêt. Avant l'exécution du traitement de la session Double Digital Filtering, il est nécessaire de sélectionner dans les listes déroulantes l'hôte et le pathogène d'étude. Cela permet de s'assurer que le traitement est adapté aux spécificités de chaque étude et d'obtenir des résultats précis et fiables.
+The Double Digital Filtering session aims to extract the genome of the target pathogen from samples obtained from the human host. This is done by filtering the paired-end sequences to remove low-quality sequences and using the indexed reference genomes from the Reference Genome session to align the sequences to the target pathogen genome. The final result of this session is the pathomapped file containing the extracted pathogens from the host that have aligned well to the target pathogen genome. Before running the Double Digital Filtering session, it is necessary to select the host and target pathogen from the dropdown lists. This ensures that the processing is tailored to the specific requirements of each study and produces accurate and reliable results.
 Pipeline
  
-.. rubric:: Interface de la session pipeline
+.. rubric:: Pipeline session interface
 
 .. image:: ../pictures/-21707.png
-   :alt: Interface de la session pipeline
+   :alt: Pipeline session interface
 
 .. rubric:: Generate assembly and/or consensus.
 
 .. image:: ../pictures/-21738.png
    :alt: Generate assembly and/or consensus.
-
